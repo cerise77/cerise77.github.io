@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Поблочная прокрутка на landing page</title>
+  <meta name="description" content="Небольшая статья о том, как сделать поблочную прокрутка на landing page">
+  <meta name="Keywords" content="Поблочная прокрутка">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Дмитрий Давыдов">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Таблица стилей Bootstrap -->
+  <link href="libs/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+  <!-- Основная таблица стилей -->
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <!-- CSS файл плагина fullpage -->
+  <link href="libs/fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div id="menu">
+    	<a href="#">
+    		<svg width="300" height="50" viewBox="70 0 140 50">
+    			<g id="Layer_1">
+    			</g>
+    			<g id="Layer_2">
+    				<g id="Layer_3">
+    					<g>
+    						<path fill="#FFFFFF" d="M15.6,6.4H9.3v2.4h1.9c1.7,0,3.1,0.4,4.1,1.3s1.5,1.9,1.5,3.3c0,1.4-0.5,2.5-1.5,3.4s-2.4,1.3-4.1,1.3H6
+    							V3.9h9.5V6.4z M9.3,11.4v4.2h1.9c0.7,0,1.3-0.2,1.7-0.6s0.6-0.9,0.6-1.5c0-0.6-0.2-1.1-0.6-1.5s-1-0.6-1.7-0.6H9.3z"/>
+    						<path fill="#FFFFFF" d="M24.8,10.1L24.8,10.1L24.8,10.1l2.5-6.2h3.4l-4.8,11.3c-0.4,1-1,1.7-1.6,2.3s-1.5,0.8-2.5,0.8
+    							c-0.2,0-0.4,0-0.6,0s-0.3,0-0.4,0l0-2.6c0.1,0,0.2,0,0.3,0s0.3,0,0.4,0c0.6,0,1-0.1,1.2-0.3s0.5-0.5,0.6-1l0.1-0.4L18.3,3.9h3.5
+    							L24.8,10.1z"/>
+    						<path fill="#FFFFFF" d="M45.4,21.6h-3v-3.5h-8v3.5h-3.1l-0.2-6h1c0.5-0.4,1-1,1.3-1.9s0.6-2.2,0.7-4l0.4-5.8h9.6v11.7h1.5
+    							L45.4,21.6z M37.4,9.7c-0.1,1.4-0.2,2.6-0.5,3.5s-0.6,1.7-1,2.4h4.9V6.4h-3.2L37.4,9.7z"/>
+    						<path fill="#FFFFFF" d="M53.4,10.1L53.4,10.1L53.4,10.1l2.5-6.2h3.4l-4.8,11.3c-0.4,1-1,1.7-1.6,2.3s-1.5,0.8-2.5,0.8
+    							c-0.2,0-0.4,0-0.6,0s-0.3,0-0.4,0l0-2.6c0.1,0,0.2,0,0.3,0s0.3,0,0.4,0c0.6,0,1-0.1,1.2-0.3s0.5-0.5,0.6-1L52,14L46.9,3.9h3.5
+    							L53.4,10.1z"/>
+    						<path fill="#FFFFFF" d="M64.7,3.9v11.7h3.6V3.9h3.3v11.7h3.6V3.9h3.3v11.7h2.2l-0.2,5.9h-3.1v-3.4h-16V3.9H64.7z"/>
+    						<path fill="#FFFFFF" d="M95.2,18.1h-3.3v-5.7h-5.3v5.7h-3.3V3.9h3.3v6h5.3v-6h3.3V18.1z"/>
+    						<path fill="#FFFFFF" d="M110.1,12.3c0,1.8-0.6,3.2-1.7,4.3s-2.6,1.7-4.4,1.7c-1.8,0-3.3-0.6-4.4-1.7S98,14,98,12.3V9.7
+    							c0-1.7,0.6-3.2,1.7-4.3s2.6-1.7,4.4-1.7c1.8,0,3.2,0.6,4.4,1.7s1.7,2.6,1.7,4.3V12.3z M106.8,9.7c0-1-0.2-1.8-0.7-2.5s-1.2-1-2-1
+    							c-0.9,0-1.6,0.3-2,1s-0.7,1.5-0.7,2.5v2.6c0,1,0.2,1.9,0.7,2.5s1.2,1,2.1,1c0.9,0,1.5-0.3,2-1s0.7-1.5,0.7-2.5V9.7z"/>
+    						<path fill="#FFFFFF" d="M124.1,13.1L124.1,13.1c0,1.7-0.5,3-1.5,3.9s-2.3,1.3-4,1.3c-1.8,0-3.2-0.5-4.3-1.6s-1.7-2.5-1.7-4.2v-3
+    							c0-1.7,0.5-3.1,1.6-4.2s2.4-1.6,4.1-1.6c1.8,0,3.2,0.5,4.1,1.4s1.5,2.2,1.6,3.9l0,0.1h-3.2c0-0.9-0.3-1.6-0.6-2.1s-1-0.7-1.9-0.7
+    							c-0.7,0-1.3,0.3-1.8,0.9s-0.6,1.4-0.6,2.4v3c0,1,0.2,1.8,0.7,2.4s1.1,0.9,1.9,0.9c0.8,0,1.4-0.2,1.7-0.6s0.5-1.1,0.6-2H124.1z"/>
+    						<path fill="#FFFFFF" d="M136.4,6.4h-3.8v11.7h-3.3V6.4h-3.7V3.9h10.8V6.4z"/>
+    						<path fill="#FFFFFF" d="M142.2,8.8h1.9c1.7,0,3.1,0.4,4.1,1.3s1.5,1.9,1.5,3.3c0,1.4-0.5,2.5-1.5,3.4s-2.4,1.3-4.1,1.3h-5.2V3.9
+    							h3.3V8.8z M142.2,11.4v4.2h1.9c0.7,0,1.3-0.2,1.7-0.6s0.6-0.9,0.6-1.5c0-0.6-0.2-1.1-0.6-1.5s-1-0.6-1.7-0.6H142.2z"/>
+    						<path fill="#FFFFFF" d="M15.5,25.9h1.9v14.2h-1.9v-11l-7,11H6.6V25.9h1.9v11L15.5,25.9z"/>
+    						<path fill="#FFFFFF" d="M42.9,40.1H41v-6.6h-7.2v6.6H32V25.9h1.9V32H41v-6.1h1.9V40.1z"/>
+    						<path fill="#FFFFFF" d="M57.3,36.4h-6l-1.3,3.7h-1.9l5.4-14.2h1.6l5.4,14.2h-1.9L57.3,36.4z M52,34.8h4.8l-2.4-6.7L52,34.8z"/>
+    						<path fill="#FFFFFF" d="M78.6,43.6h-1.9v-3.5H66.6v3.5h-1.9l0-5h1.2c0.6-0.7,1.1-1.6,1.5-2.8s0.6-2.4,0.7-3.8l0.3-6.1h8.5v12.7
+    							h1.9L78.6,43.6z M68,38.6h6.9V27.4h-4.8l-0.2,4.2c-0.1,1.6-0.3,3-0.6,4.2S68.5,37.8,68,38.6z"/>
+    						<path fill="#FFFFFF" d="M92,33.5h-6.2v5H93v1.5h-9V25.9h8.9v1.5h-7.1V32H92V33.5z"/>
+    						<path fill="#FFFFFF" d="M108.4,33.6h-1.5v6.5H105v-6.5h-1.6l-4,6.5h-2.3l4.8-7.5l-4.4-6.7h2.2l3.8,6.2h1.6v-6.2h1.9V32h1.5
+    							l3.8-6.2h2.2l-4.4,6.7l4.8,7.5h-2.3L108.4,33.6z"/>
+    						<path fill="#FFFFFF" d="M132.7,43.6h-1.9v-3.5h-10.2v3.5h-1.9l0-5h1.2c0.6-0.7,1.1-1.6,1.5-2.8s0.6-2.4,0.7-3.8l0.3-6.1h8.5v12.7
+    							h1.9L132.7,43.6z M122,38.6h6.9V27.4h-4.8l-0.2,4.2c-0.1,1.6-0.3,3-0.6,4.2S122.5,37.8,122,38.6z"/>
+    						<path fill="#FFFFFF" d="M146,36.4h-6l-1.3,3.7h-1.9l5.4-14.2h1.6l5.4,14.2h-1.9L146,36.4z M140.6,34.8h4.8l-2.4-6.7L140.6,34.8z"
+    							/>
+    					</g>
+    					<g id="Layer_4">
+    						<rect x="159.2" y="2.8" fill="#FFFFFF" width="1.6" height="37.3"/>
+    					</g>
+    				</g>
+    				<g id="Layer_5">
+    					<g>
+    						<path fill="#FFFFFF" d="M173.4,10.2h-4.1v2.6h2.1c0.9,0,1.6,0.2,2.1,0.7s0.8,1.1,0.8,1.8c0,0.8-0.3,1.4-0.8,1.8s-1.2,0.7-2.1,0.7
+    							h-3.3V9.3h5.2V10.2z M169.3,13.7v3.2h2.1c0.6,0,1-0.1,1.3-0.4c0.3-0.3,0.5-0.7,0.5-1.2c0-0.5-0.1-0.9-0.4-1.1s-0.7-0.4-1.3-0.4
+    							H169.3z"/>
+    						<path fill="#FFFFFF" d="M180.8,11.5v6.3h-1.1v-5.4h-2.2l-0.1,2.4c-0.1,1.1-0.3,1.9-0.5,2.3s-0.8,0.7-1.4,0.7h-0.4v-1l0.3,0
+    							c0.4,0,0.6-0.2,0.8-0.6s0.3-1,0.3-2l0.1-2.7H180.8z"/>
+    						<path fill="#FFFFFF" d="M186.5,17.8c-0.1-0.1-0.1-0.3-0.2-0.7c-0.5,0.5-1.1,0.8-1.8,0.8c-0.6,0-1.1-0.2-1.5-0.5s-0.6-0.8-0.6-1.3
+    							c0-0.7,0.3-1.2,0.8-1.5s1.2-0.5,2.1-0.5h1.1v-0.5c0-0.4-0.1-0.7-0.3-0.9s-0.6-0.3-1-0.3c-0.4,0-0.7,0.1-1,0.3s-0.4,0.4-0.4,0.7
+    							h-1.1c0-0.3,0.1-0.6,0.3-0.9s0.5-0.5,0.9-0.7s0.8-0.3,1.3-0.3c0.7,0,1.3,0.2,1.7,0.5s0.6,0.9,0.6,1.5v2.9c0,0.6,0.1,1,0.2,1.4
+    							v0.1H186.5z M184.7,17c0.3,0,0.7-0.1,1-0.3s0.5-0.4,0.7-0.7v-1.3h-0.8c-1.3,0-2,0.4-2,1.2c0,0.3,0.1,0.6,0.3,0.8
+    							S184.3,17,184.7,17z"/>
+    						<path fill="#FFFFFF" d="M193.2,12.4h-2.9v5.4h-1.1v-6.3h4V12.4z"/>
+    						<path fill="#FFFFFF" d="M193.7,14.6c0-0.6,0.1-1.2,0.4-1.7s0.6-0.9,1-1.1s0.9-0.4,1.5-0.4c0.9,0,1.6,0.3,2.1,0.9s0.8,1.4,0.8,2.4
+    							v0.1c0,0.6-0.1,1.2-0.4,1.7s-0.6,0.9-1,1.1s-0.9,0.4-1.5,0.4c-0.9,0-1.6-0.3-2.1-0.9S193.7,15.7,193.7,14.6L193.7,14.6z
+    							 M194.8,14.7c0,0.7,0.2,1.3,0.5,1.7s0.8,0.6,1.3,0.6c0.6,0,1-0.2,1.3-0.6s0.5-1,0.5-1.8c0-0.7-0.2-1.3-0.5-1.7s-0.8-0.6-1.3-0.6
+    							c-0.5,0-1,0.2-1.3,0.6S194.8,13.9,194.8,14.7z"/>
+    						<path fill="#FFFFFF" d="M205.4,12.4h-2.1v5.5h-1.1v-5.5h-2.1v-0.9h5.3V12.4z"/>
+    						<path fill="#FFFFFF" d="M206.6,17.8v-6.3h2.5c0.8,0,1.5,0.1,1.9,0.4s0.7,0.7,0.7,1.3c0,0.3-0.1,0.6-0.3,0.8s-0.4,0.4-0.8,0.5
+    							c0.4,0.1,0.7,0.3,0.9,0.5s0.3,0.6,0.3,0.9c0,0.6-0.2,1-0.6,1.3s-1,0.5-1.8,0.5H206.6z M207.7,14.2h1.4c1,0,1.5-0.3,1.5-0.9
+    							s-0.5-0.9-1.4-0.9h-1.5V14.2z M207.7,15.1V17h1.8c0.5,0,0.8-0.1,1-0.3s0.3-0.4,0.3-0.7c0-0.6-0.5-0.9-1.4-0.9H207.7z"/>
+    						<path fill="#FFFFFF" d="M213.1,14.6c0-0.6,0.1-1.2,0.4-1.7s0.6-0.9,1-1.1s0.9-0.4,1.5-0.4c0.9,0,1.6,0.3,2.1,0.9s0.8,1.4,0.8,2.4
+    							v0.1c0,0.6-0.1,1.2-0.4,1.7s-0.6,0.9-1,1.1S216.5,18,216,18c-0.9,0-1.6-0.3-2.1-0.9S213.1,15.7,213.1,14.6L213.1,14.6z
+    							 M214.2,14.7c0,0.7,0.2,1.3,0.5,1.7s0.8,0.6,1.3,0.6c0.6,0,1-0.2,1.3-0.6s0.5-1,0.5-1.8c0-0.7-0.2-1.3-0.5-1.7s-0.8-0.6-1.3-0.6
+    							c-0.5,0-1,0.2-1.3,0.6S214.2,13.9,214.2,14.7z"/>
+    						<path fill="#FFFFFF" d="M225.5,14.7c0,1-0.2,1.7-0.7,2.3s-1,0.9-1.8,0.9c-0.8,0-1.4-0.2-1.8-0.7v3.1h-1.1v-8.8h1l0.1,0.7
+    							c0.4-0.5,1.1-0.8,1.8-0.8c0.8,0,1.4,0.3,1.8,0.9S225.5,13.6,225.5,14.7L225.5,14.7z M224.5,14.6c0-0.7-0.2-1.3-0.5-1.7
+    							s-0.7-0.6-1.3-0.6c-0.7,0-1.1,0.3-1.5,0.9v3c0.3,0.6,0.8,0.9,1.5,0.9c0.5,0,0.9-0.2,1.2-0.6S224.5,15.4,224.5,14.6z"/>
+    						<path fill="#FFFFFF" d="M231,11.5h1.1v6.3H231v-4.6l-2.9,4.6H227v-6.3h1.1v4.6L231,11.5z"/>
+    						<path fill="#FFFFFF" d="M238.6,12.4h-2.1v5.5h-1.1v-5.5h-2.1v-0.9h5.3V12.4z"/>
+    						<path fill="#FFFFFF" d="M241.8,18c-0.9,0-1.6-0.3-2.1-0.8s-0.8-1.3-0.8-2.3v-0.2c0-0.6,0.1-1.2,0.4-1.7s0.6-0.9,1-1.2
+    							s0.9-0.4,1.4-0.4c0.8,0,1.5,0.3,1.9,0.8s0.7,1.3,0.7,2.3V15H240c0,0.6,0.2,1.1,0.5,1.5s0.8,0.6,1.3,0.6c0.4,0,0.7-0.1,1-0.2
+    							s0.5-0.4,0.7-0.6l0.7,0.5C243.6,17.5,242.8,18,241.8,18z M241.6,12.3c-0.4,0-0.8,0.2-1.1,0.5s-0.5,0.8-0.6,1.3h3.2V14
+    							c0-0.6-0.2-1-0.4-1.3S242.1,12.3,241.6,12.3z"/>
+    						<path fill="#FFFFFF" d="M250.7,11.5v6.3h-1.1v-5.4h-2.2l-0.1,2.4c-0.1,1.1-0.3,1.9-0.5,2.3s-0.8,0.7-1.4,0.7h-0.4v-1l0.3,0
+    							c0.4,0,0.6-0.2,0.8-0.6s0.3-1,0.3-2l0.1-2.7H250.7z"/>
+    						<path fill="#FFFFFF" d="M253.6,13.7h1.6c0.7,0,1.3,0.2,1.7,0.6s0.6,0.9,0.6,1.5c0,0.6-0.2,1.1-0.6,1.5s-1,0.6-1.7,0.6h-2.7v-6.3
+    							h1.1V13.7z M253.6,14.6v2.4h1.6c0.4,0,0.7-0.1,0.9-0.3c0.2-0.2,0.3-0.5,0.3-0.9c0-0.4-0.1-0.6-0.3-0.9c-0.2-0.2-0.5-0.3-0.9-0.3
+    							H253.6z"/>
+    						<path fill="#FFFFFF" d="M264.1,17.8h-1.1v-2.7h-2.9v2.7h-1.1v-6.3h1.1v2.7h2.9v-2.7h1.1V17.8z"/>
+    						<path fill="#FFFFFF" d="M267.1,13.7h1.6c0.7,0,1.3,0.2,1.7,0.6s0.6,0.9,0.6,1.5c0,0.6-0.2,1.1-0.6,1.5s-1,0.6-1.7,0.6H266v-6.3
+    							h1.1V13.7z M267.1,14.6v2.4h1.6c0.4,0,0.7-0.1,0.9-0.3s0.3-0.5,0.3-0.9c0-0.4-0.1-0.6-0.3-0.9s-0.5-0.3-0.9-0.3H267.1z
+    							 M273.3,17.8h-1.1v-6.3h1.1V17.8z"/>
+    						<path fill="#FFFFFF" d="M279.3,11.5h1.1v6.3h-1.1v-4.6l-2.9,4.6h-1.1v-6.3h1.1v4.6L279.3,11.5z M279.6,9.2c0,0.5-0.2,0.9-0.5,1.1
+    							s-0.7,0.4-1.3,0.4s-0.9-0.1-1.3-0.4s-0.5-0.7-0.5-1.1h0.9c0,0.3,0.1,0.5,0.2,0.6s0.4,0.2,0.7,0.2c0.3,0,0.5-0.1,0.6-0.2
+    							s0.2-0.4,0.2-0.6H279.6z"/>
+    						<path fill="#FFFFFF" d="M167.8,26.8c0-1.1,0.2-1.9,0.6-2.5s1-0.9,1.7-0.9c0.3,0,0.6,0.1,0.9,0.2v-2.7h1.1v2.7
+    							c0.3-0.1,0.6-0.2,1-0.2c0.7,0,1.3,0.3,1.7,0.9s0.6,1.5,0.6,2.6c0,0.9-0.2,1.7-0.6,2.2s-1,0.8-1.7,0.8c-0.4,0-0.7-0.1-1-0.2v2.5
+    							H171v-2.5c-0.3,0.1-0.6,0.2-0.9,0.2c-0.7,0-1.3-0.3-1.7-0.8S167.8,27.8,167.8,26.8L167.8,26.8z M168.9,26.9
+    							c0,0.7,0.1,1.3,0.4,1.6s0.6,0.6,1.1,0.6c0.2,0,0.4,0,0.6-0.1v-4.6c-0.2-0.1-0.4-0.1-0.6-0.1c-0.5,0-0.8,0.2-1.1,0.6
+    							S168.9,26,168.9,26.9z M174.3,26.8c0-0.8-0.1-1.4-0.4-1.9s-0.7-0.7-1.1-0.7c-0.2,0-0.5,0-0.6,0.1V29c0.2,0.1,0.4,0.1,0.7,0.1
+    							c0.5,0,0.9-0.2,1.1-0.6S174.3,27.6,174.3,26.8z"/>
+    						<path fill="#FFFFFF" d="M176.5,26.6c0-0.6,0.1-1.2,0.4-1.7s0.6-0.9,1-1.1s0.9-0.4,1.5-0.4c0.9,0,1.6,0.3,2.1,0.9s0.8,1.4,0.8,2.4
+    							v0.1c0,0.6-0.1,1.2-0.4,1.7s-0.6,0.9-1,1.1s-0.9,0.4-1.5,0.4c-0.9,0-1.6-0.3-2.1-0.9S176.5,27.7,176.5,26.6L176.5,26.6z
+    							 M177.6,26.7c0,0.7,0.2,1.3,0.5,1.7s0.8,0.6,1.3,0.6c0.6,0,1-0.2,1.3-0.6s0.5-1,0.5-1.8c0-0.7-0.2-1.3-0.5-1.7s-0.8-0.6-1.3-0.6
+    							c-0.5,0-1,0.2-1.3,0.6S177.6,25.9,177.6,26.7z"/>
+    						<path fill="#FFFFFF" d="M188.8,29.8h-1.1v-2.7h-2.9v2.7h-1.1v-6.3h1.1v2.7h2.9v-2.7h1.1V29.8z"/>
+    						<path fill="#FFFFFF" d="M190.5,28.9l0.4-0.5c0.4-0.5,0.7-1.4,0.7-2.5l0.1-2.5h4.1v5.5h0.8v2.7h-1.1v-1.9h-4.4v1.9H190l0-2.7
+    							H190.5z M191.8,28.9h2.9v-4.5h-2l-0.1,1.5C192.6,27.3,192.3,28.3,191.8,28.9z"/>
+    					</g>
+    				</g>
+    			</g>
+    		</svg>
+    	</a>
+
+    	<ul class="r-menu">
+    		<li>Оказать поддержку</li>
+    		<li>
+    			<a href="#">
+    				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    					width="40" height="25" viewBox="46 40 512 512" xml:space="preserve">
+    				<g>
+    					<path fill="#fff" d="M478,394.3c-22.6,0-43,9.4-57.5,24.4L205,310.9c0.7-4.1,1-8.4,1-12.7s-0.4-8.5-1-12.7l215.5-107.8
+    						c14.5,15,34.9,24.4,57.5,24.4c44.2,0,80-35.8,80-80s-35.8-80-80-80s-80,35.8-80,80c0,4.3,0.4,8.5,1,12.7L183.5,242.7
+    						c-14.5-15-34.9-24.4-57.5-24.4c-44.2,0-80,35.8-80,80c0,44.2,35.8,80,80,80c22.6,0,43-9.4,57.5-24.4L399,461.6
+    						c-0.7,4.1-1,8.4-1,12.7c0,44.2,35.8,80,80,80s80-35.8,80-80C558,430.1,522.2,394.3,478,394.3z"/>
+    				</g>
+    				</svg>
+    			</a>
+    			<!--<div class="search">
+    				<input type="submit" value="&#xf002;" class="search-btn fa ib-m">
+    				<div class="search-slide ib-m">
+    					<input type="text" placeholder="Enter your search" class="ib-m">
+    					<div class="search-close ib-m"><i class="fa fa-times"></i></div>
+    				</div>
+    			</div>-->
+    		</li>
+    		<li><a href="#" class="but-menu">Контакты</a></li>
+    	</ul>
+    </div>
+  </header>
+
+  <div id="fullpage">
+
+    <section id="sec1" class="section" data-anchor="page1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="part0">
+      				<li></li>
+      				<li>
+      					<h2>Помощь  детям-сиротам</h2>
+      					<h5>Объединяем усилия неравнодушных людей в оказании помощи нуждающимся детям.</h5>
+      				</li>
+      				<li>
+      					<a href="#" class="scroll-down" address="true"></a>
+      				</li>
+      			</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec2" class="section" data-anchor="page2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="part1">
+      				<li></li>
+      				<li>
+      					<h2>Помогаем детским учереждениям в Харькове и области.</h2>
+      					<h5>Мы можем смело сказать, что общими усилиями сделано немало и в этом заслуга наших партнёров, многие из которых стали друзьями.</h5>
+      				</li>
+      				<li>
+      					<ul class="sec2-ul1">
+      						<li><p>Наши друзья и партнеры</p></li>
+      						<li><a>Источник</a></li>
+      					</ul>
+      				</li>
+      			</ul>
+          </div>
+        </div>
+        </div>
+    </section>
+
+
+      <section id="sec3" class="section" data-anchor="page3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="part2">
+                <li></li>
+                <li>
+                  <h2>В нашем крае в детских домах интернатах и клиниках находятся более четырех тысяч детей-сирот и детей без опеки.</h2>
+                  <h4>4911</h4>
+                  <h5>По данным управление труда и социальной защиты <br>
+                    населения Харьковской области на начало 2017 года*</h5>
+                </li>
+                <li>
+                  <ul class="sec2-ul2">
+                    <li><p>Количество детей сирот в Украине</p></li>
+                    <li><a>Источник</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="sec4" class="section" data-anchor="page4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="main-nav">
+      				<h3>Богодухов. Детский дом. Катя 5лет.</h3>
+      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+      				<div class="img"></div>
+      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      				<p>sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      			</div>
+
+      			<!--<div id="h-menu"><a class="img-replace" href="#">Gallery</a></div>-->
+
+      			<!--<div id="sec-left">
+      				<h3>Богодухов. Детский дом. Катя 5лет.</h3>
+      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+      				<div class="img"></div>
+      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      			</div>-->
+      			<ul class="part3">
+      				<li></li>
+      				<li>
+      					<h2>История <br>
+      							Кати Поляковой</h2>
+      					<h4>ребенка с ограниченными возможностями</h4>
+      				</li>
+      				<li>
+      					<ul class="but">
+      						<li><p>г. Богодухов  Украина</p></li>
+      						<li>
+      							<a href="#" id="button"></a>
+      						</li>
+      					</ul>
+      				</li>
+      				<li>
+      					<ul class="sec2-ul3">
+      						<li><p>Богодуховский дом-интернат</p></li>
+      						<li><a>Источник</a></li>
+      					</ul>
+      				</li>
+      			</ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="sec5" class="section" data-anchor="page5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="part4">
+    				<li></li>
+    				<li>
+    					<h2>Программа<br>
+    						«Наставничество для сирот»</h2>
+    					<h4>Адаптация и подготовка детей-сирот к самостоятельной жизни.<br>
+    						Это наши дети, наше будущее, наша ответственность! Узнать, как вы можете<br>
+    						поучаствовать в проекте можно по тел. (057) 766-73-28 </h4>
+    				</li>
+    				<li>
+    					<ul class="sec2-ul4">
+    						<li><p>Группа поддержки в facebook</p></li>
+    						<li><a>Источник</a></li>
+    					</ul>
+    				</li>
+    			</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec6" class="section" data-anchor="page6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="part5">
+    				<li></li>
+    				<li>
+    					<h2>Тренинг по программе <br>
+    						«Наставничество для сирот»</h2>
+    					<h4>Цель тренинга - это социальная адаптация и профориентация детей-сирот, да и просто<br>
+    						дружеский контакт со взрослым, который может помочь советом, потому что этот<br>
+    						ребёнок ему не безразличен.</h4>
+    				</li>
+    				<li>
+    					<ul class="sec2-ul5">
+    						<li><a id="linkb" href="#">Источник</a></li>
+    					</ul>
+    				</li>
+    			</ul>
+
+    			<div id="linkb-part">
+    				<ul>
+    					<li>
+    						<p><span>Условия:</span>Тренинг бесплатный. Количество мест ограничено. Предварительная запись обязательна.<br>
+    						<span>Телефоны:</span>093-703-52-88; 057-57-07-47; 095-712-47-59.</p>
+    					</li>
+    					<li id="close"><a class="img-replace" href="#">Menu</a></li>
+    				</ul>
+    			</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec3" class="section" data-anchor="page3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="part4">
+            <li></li>
+            <li>
+              <h2>Программа<br>
+                «Наставничество для сирот»</h2>
+              <h4>Адаптация и подготовка детей-сирот к самостоятельной жизни.<br>
+                Это наши дети, наше будущее, наша ответственность! Узнать, как вы можете<br>
+                поучаствовать в проекте можно по тел. (057) 766-73-28 </h4>
+            </li>
+            <li>
+              <ul class="sec2-ul4">
+                <li><p>Группа поддержки в facebook</p></li>
+                <li><a>Источник</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="libs/fullpage/scrl.js"></script>
+  <script type="text/javascript" src="libs/fullpage/carusel.js"></script>
+
+  <script src="libs/bootstrap/js/bootstrap.js"></script>
+  <script src="libs/fullpage/jquery.easings.min.js"></script>
+  <script src="libs/fullpage/scrolloverflow.min.js"></script>
+  <script src="libs/fullpage/jquery.fullPage.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage();
+      menu: '#navigation'
+    });
+  </script>
+</body>
+
+</html>
