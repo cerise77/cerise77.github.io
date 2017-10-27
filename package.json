@@ -1,0 +1,27 @@
+{
+  "name": "couleur",
+  "version": "1.0.0",
+  "description": "couleur",
+  "engines": {
+    "node": "7.10.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "^4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cerise77/couleur"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "cerise",
+  "license": "MIT"
+}
