@@ -133,12 +133,9 @@ $(document).ready(function () {
       console.log('Captains Log');
   });*/
 
-  var menu_navigation = $('#main-nav'),
-        /*$L = 900,*/
-        /*cart_trigger = $('#cart-trigger'),*/
+  /*var menu_navigation = $('#main-nav'),
         h_menu = $('#button'),
-        /*cart = $('#cart'),*/
-        shadow_layer = $('#section3');
+        shadow_layer = $('#section3');*/
 
 
   /*shadow_layer.on('click', function () {
@@ -148,21 +145,43 @@ $(document).ready(function () {
       $('body').removeClass('overflow-hidden');
   });*/
 
-  h_menu.on('click', function () {
-      /*cart.removeClass('speed-in');*/
+  /*h_menu.on('click', function () {
       toggle_panel_visibility(menu_navigation, shadow_layer, $('body'));
-    //  console.log('Captains Log');
-  });
+  });*/
 
 
-  var left_navigation = $('#left-nav'),
+  /*var left_navigation = $('#left-nav'),
         k_menu = $('#but-vid'),
         shadow_left = $('#section10');
 
   k_menu.on('click', function () {
       toggle_left_visibility(left_navigation, shadow_left, $('body'));
-    //  console.log('Captains Log');
+  });*/
+
+
+  $('#button').on('click', function () {
+    $('#main-nav').toggleClass('speed-in');
+    $('#sec4').toggleClass('is-visible');
+    //console.log("dvdfnkgfbk");
   });
+
+  $('#close-nav').on('click', function () {
+    $('#main-nav').removeClass('speed-in');
+    $('#sec4').removeClass('is-visible');
+  });
+
+
+
+  $('#but-vid').on('click', function () {
+    $('#left-nav').toggleClass('speed-in');
+    $('#sec11').toggleClass('is-visible');
+  });
+
+  $('#close-left').on('click', function () {
+      $('#left-nav').removeClass('speed-in');
+      $('#sec11').removeClass('is-visible');
+  });
+
 
 
   $('#linkb').on('click', function () {
@@ -210,17 +229,15 @@ $(document).ready(function () {
 });
 
 
-    function toggle_panel_visibility(panel, background_layer, body) {
+    /*function toggle_panel_visibility(panel, background_layer, body) {
         if (panel.hasClass('speed-in')) {
             panel.removeClass('speed-in');
             background_layer.removeClass('is-visible');
-            //body.removeClass('overflow-hidden');
         } else {
             panel.addClass('speed-in');
             background_layer.addClass('is-visible');
-            //body.addClass('overflow-hidden');
         }
-    }
+    }*/
 
 
     function toggle_left_visibility(volet, background_volet, body) {

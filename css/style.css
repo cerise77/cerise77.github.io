@@ -559,11 +559,11 @@ p{
  #sec3 {
  	background: #2572c0;
  }
- /*#sec3 .container1 {
+ #sec3 .container1 {
 	 padding: 10px 40px;
 	 margin-right: 40px;
  	background: url(img/kharkiv.png) no-repeat right;
- }*/
+ }
  #sec3 h2 {
    font-size: 64px;
    line-height: 64px;
@@ -993,19 +993,19 @@ p{
 
 
  /*---------Sec6------*/
- #fullpage #section6 {
+ #sec7 {
  	background: #141719 url(img/ban5.jpg) no-repeat center;
  }
- #fullpage #section6 .container1 {
+ #sec7 .container1 {
  padding: 10px 0 10px 40px;
  }
- #fullpage #section6 h2 {
+ #sec7 h2 {
  	font-size: 64px;
  	font-weight: 500;
  	text-align: left;
  	color: #fff;
  }
- #fullpage #section6 h4 {
+ #sec7 h4 {
  	margin-top: 15px;
  	font-size: 22px;
 	line-height: 26px;
@@ -1014,37 +1014,37 @@ p{
  	color: #fff;
  }
 
- #fullpage #section6 ul.part6 {
+ #sec7 ul.part6 {
   list-style: none;
  }
- #fullpage #section6 ul.part6 > li {
+ #sec7 ul.part6 > li {
  margin-bottom: 6%;
  }
- #fullpage #section6 ul.part6 li:last-child {
+ #sec7 ul.part6 li:last-child {
   margin-bottom: 0;
  }
-  #fullpage #section6 ul > li ul.sec2-ul6 {
+  #sec7 ul > li ul.sec2-ul6 {
 		padding-right: 50px;
 		float: right;
 		list-style: none;
  	/*text-align: right;*/
  }
- #fullpage #section6 ul > li ul.sec2-ul6 > li {
+ #sec7 ul > li ul.sec2-ul6 > li {
  display: inline-block;
  padding: 5px 23px 5px 0;
  }
- #fullpage #section6 ul > li ul.sec2-ul6 > li:last-child {
+ #sec7 ul > li ul.sec2-ul6 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section6 ul > li ul.sec2-ul6 > li p {
+ #sec7 ul > li ul.sec2-ul6 > li p {
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
   color: #fff;
  }
- #fullpage #section6 ul > li ul.sec2-ul6 > li a {
+ #sec7 ul > li ul.sec2-ul6 > li a {
   display: block;
   cursor: pointer;
   font-size: 16px;
@@ -1055,26 +1055,26 @@ p{
  }
 
 
- #fullpage #section6 ul > li ul.but {
+ #sec7 ul > li ul.but {
   list-style: none;
 	text-align: center;
 	vertical-align: top;
  }
- #fullpage #section6 ul > li ul.but > li {
+ #sec7 ul > li ul.but > li {
   /*display: inline-block;*/
 	margin-bottom: 25px;
 	text-align: center;
  }
- #fullpage #section6 ul > li ul.but > li:last-child {
+ #sec7 ul > li ul.but > li:last-child {
 	/*display: inline-block;*/
  margin-bottom: 0;
  }
- #fullpage #section6 ul > li ul.but > li p {
+ #sec7 ul > li ul.but > li p {
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
  }
- #fullpage #section6 ul > li ul.but > li #vid {
+ #sec7 ul > li ul.but > li #vid {
 	display: block;
 	margin: 0 auto;
 	background: url(img/yt_icon_mono_dark.png) no-repeat center;
@@ -1158,20 +1158,20 @@ p{
 
 
  /*---------Sec8------*/
- #fullpage #section7 {
+ #sec8 {
   background: #141719 url(img/ban6.jpg) no-repeat center;
  }
- #fullpage #section7 .container1 {
+ #sec8 .container1 {
  	/*padding: 10px 40px;*/
  }
- #fullpage #section7 h2 {
+ #sec8 h2 {
 	 padding: 10px 40px;
   font-size: 64px;
   font-weight: 500;
   text-align: left;
   color: #fff;
  }
- #fullpage #section7 h4 {
+ #sec8 h4 {
 	padding: 10px 40px;
   margin-top: 15px;
   font-size: 22px;
@@ -1181,38 +1181,38 @@ p{
   color: #fff;
  }
 
- #fullpage #section7 ul.part7 {
+ #sec8 ul.part7 {
 	/*padding: 10px 40px;*/
   list-style: none;
  }
- #fullpage #section7 ul.part7 > li {
+ #sec8 ul.part7 > li {
  margin-bottom: 4%;
  }
- #fullpage #section7 ul.part7 li:last-child {
+ #sec8 ul.part7 li:last-child {
   margin-bottom: 0;
  }
-  #fullpage #section7 ul > li ul.sec2-ul7 {
+  #sec8 ul > li ul.sec2-ul7 {
 		padding-right: 50px;
 		float: right;
 		list-style: none;
   /*text-align: right;*/
  }
- #fullpage #section7 ul > li ul.sec2-ul7 > li {
+ #sec8 ul > li ul.sec2-ul7 > li {
  display: inline-block;
  padding: 5px 23px 5px 0;
  }
- #fullpage #section7 ul > li ul.sec2-ul7 > li:last-child {
+ #sec8 ul > li ul.sec2-ul7 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section7 ul > li ul.sec2-ul7 > li p {
+ #sec8 ul > li ul.sec2-ul7 > li p {
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
   color: #fff;
  }
- #fullpage #section7 ul > li ul.sec2-ul7 > li a {
+ #sec8 ul > li ul.sec2-ul7 > li a {
   display: block;
   cursor: pointer;
   font-size: 16px;
@@ -1223,26 +1223,26 @@ p{
  }
 
 
- #fullpage #section7 ul > li ul.but {
+ #sec8 ul > li ul.but {
   list-style: none;
   text-align: center;
   vertical-align: top;
  }
- #fullpage #section7 ul > li ul.but > li {
+ #sec8 ul > li ul.but > li {
   /*display: inline-block;*/
   margin-bottom: 25px;
   text-align: center;
  }
- #fullpage #section7 ul > li ul.but > li:last-child {
+ #sec8 ul > li ul.but > li:last-child {
   /*display: inline-block;*/
  margin-bottom: 0;
  }
- #fullpage #section7 ul > li ul.but > li p {
+ #sec8 ul > li ul.but > li p {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
  }
- #fullpage #section7 ul > li ul.but > li #gal {
+ #sec8 ul > li ul.but > li #gal {
   display: block;
   margin: 0 auto;
   background: url(img/Vector-Smart-Object2.png) no-repeat center;
@@ -1364,10 +1364,10 @@ p{
 
 
  /*---------Sec9------*/
- #fullpage #section8 {
+ #sec9 {
   background: #2572c0;
  }
- #fullpage #section8 h2 {
+ #sec9 h2 {
  	font-size: 64px;
   line-height: 64px;
  	font-weight: 500;
@@ -1375,7 +1375,7 @@ p{
  	color: #fff;
   z-index: 5px;
  }
- #fullpage #section8 h5 {
+ #sec9 h5 {
  	margin: 35px 180px 0;
  	font-size: 22px;
   line-height: 22px;
@@ -1384,89 +1384,89 @@ p{
  	color: #656565;
   z-index: 7px;
  }
- #fullpage #section8 ul.part8 {
+ #sec9 ul.part8 {
  	list-style: none;
  }
- #fullpage #section8 ul.part8 > li {
+ #sec9 ul.part8 > li {
   margin-bottom: 8.5%;
  }
- #fullpage #section8 ul.part8 li:last-child {
+ #sec9 ul.part8 li:last-child {
  	margin-bottom: 0;
  }
 
- #fullpage #section8 ul > li ul.list {
+ #sec9 ul.part8 > li ul.list {
 	list-style: none;
 	text-align: center;
  }
- #fullpage #section8 ul > li ul.list > li {
+ #sec9 ul.part8 > li ul.list > li {
 	 display: inline-block;
 	 text-align: center;
 	 margin-right: 80px;
  }
-#fullpage #section8 ul > li ul.list > li:last-child {
+#sec9 ul > li ul.list > li:last-child {
 	margin-right: 0;
 }
-#fullpage #section8 ul > li ul.list > li .rect1 {
+#sec9 ul > li ul.list > li .rect1 {
 	margin: 0 auto 20px;
 	width: 36px;
 	height: 36px;
 	background: url(img/recrt1.png) no-repeat center center;
 	text-align: center;
 }
-#fullpage #section8 ul > li ul.list > li .rect2 {
+#sec9 ul > li ul.list > li .rect2 {
 	margin: 0 auto 20px;
 	width: 36px;
 	height: 36px;
 	background: url(img/recrt2.png) no-repeat center center;
 	text-align: center;
 }
-#fullpage #section8 ul > li ul.list > li .rect3 {
+#sec9 ul > li ul.list > li .rect3 {
 	margin: 0 auto 20px;
 	width: 36px;
 	height: 36px;
 	background: url(img/recrt3.png) no-repeat center center;
 	text-align: center;
 }
-#fullpage #section8 ul > li ul.list > li .rect4 {
+#sec9 ul > li ul.list > li .rect4 {
 	margin: 0 auto 20px;
 	width: 36px;
 	height: 36px;
 	background: url(img/recrt4.png) no-repeat center center;
 	text-align: center;
 }
- #fullpage #section8 ul > li ul.list > li h3 {
+ #sec9 ul > li ul.list > li h3 {
 	 margin-bottom: 20px;
 	font-size: 48px;
 	font-weight: 600;
 	color: #012d49;
  }
- #fullpage #section8 ul > li ul.list > li p {
+ #sec9 ul > li ul.list > li p {
  font-size: 14px;
  color: #fff;
  }
 
-  #fullpage #section8 ul > li ul.sec2-ul8 {
+  #sec9 ul > li ul.sec2-ul8 {
 		padding-right: 50px;
 		float: right;
 		list-style: none;
  	 /*text-align: right;*/
   }
- #fullpage #section8 ul > li ul.sec2-ul8 > li {
+ #sec9 ul > li ul.sec2-ul8 > li {
   display: inline-block;
   padding: 5px 23px 5px 0;
  }
- #fullpage #section8 ul > li ul.sec2-ul8 > li:last-child {
+ #sec9 ul > li ul.sec2-ul8 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section8 ul > li ul.sec2-ul8 > li p {
+ #sec9 ul > li ul.sec2-ul8 > li p {
  	font-size: 16px;
  	font-style: italic;
  	font-weight: 600;
  	color: #fff;
  }
- #fullpage #section8 ul > li ul.sec2-ul8 > li a {
+ #sec9 ul > li ul.sec2-ul8 > li a {
  	display: block;
  	cursor: pointer;
  	font-size: 16px;
@@ -1478,20 +1478,20 @@ p{
 
 
  /*---------Sec10------*/
- #fullpage #section9 {
+ #sec10 {
 	background: #141719 url(img/ban7.jpg) no-repeat center;
  }
- #fullpage #section9 .container1 {
+ #sec10 .container1 {
 	/*padding: 10px 40px;*/
  }
- #fullpage #section9 h2 {
+ #sec10 h2 {
 	 padding: 10px 40px;
 	font-size: 64px;
 	font-weight: 500;
 	text-align: left;
 	color: #fff;
  }
- #fullpage #section9 h4 {
+ #sec10 h4 {
 	padding: 10px 40px;
 	margin-top: 15px;
 	font-size: 22px;
@@ -1501,38 +1501,38 @@ p{
 	color: #fff;
  }
 
- #fullpage #section9 ul.part9 {
+ #sec10 ul.part9 {
 	/*padding: 10px 40px;*/
 	list-style: none;
  }
- #fullpage #section9 ul.part9 > li {
+ #sec10 ul.part9 > li {
  margin-bottom: 5%;
  }
- #fullpage #section9 ul.part9 li:last-child {
+ #sec10 ul.part9 li:last-child {
 	margin-bottom: 0;
  }
-	#fullpage #section9 ul > li ul.sec2-ul9 {
+	#sec10 ul > li ul.sec2-ul9 {
 		padding-right: 50px;
 		float: right;
 		list-style: none;
 	/*text-align: right;*/
  }
- #fullpage #section9 ul > li ul.sec2-ul9 > li {
+ #sec10 ul > li ul.sec2-ul9 > li {
  display: inline-block;
  padding: 5px 23px 5px 0;
  }
- #fullpage #section9 ul > li ul.sec2-ul9 > li:last-child {
+ #sec10 ul > li ul.sec2-ul9 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section9 ul > li ul.sec2-ul9 > li p {
+ #sec10 ul > li ul.sec2-ul9 > li p {
 	font-size: 16px;
 	font-style: italic;
 	font-weight: 500;
 	color: #fff;
  }
- #fullpage #section9 ul > li ul.sec2-ul9 > li a {
+ #sec10 ul > li ul.sec2-ul9 > li a {
 	display: block;
 	cursor: pointer;
 	font-size: 16px;
@@ -1543,26 +1543,26 @@ p{
  }
 
 
- #fullpage #section9 ul > li ul.but {
+ #sec10 ul > li ul.but {
 	list-style: none;
 	text-align: center;
 	vertical-align: top;
  }
- #fullpage #section9 ul > li ul.but > li {
+ #sec10 ul > li ul.but > li {
 	/*display: inline-block;*/
 	margin-bottom: 25px;
 	text-align: center;
  }
- #fullpage #section9 ul > li ul.but > li:last-child {
+ #sec10 ul > li ul.but > li:last-child {
 	/*display: inline-block;*/
  margin-bottom: 0;
  }
- #fullpage #section9 ul > li ul.but > li p {
+ #sec10 ul > li ul.but > li p {
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
  }
- #fullpage #section9 ul > li ul.but > li #gal1 {
+ #sec10 ul > li ul.but > li #gal1 {
 	display: block;
 	margin: 0 auto;
 	background: url(img/Vector-Smart-Object2.png) no-repeat center;
@@ -1682,24 +1682,24 @@ p{
 
 
  /*---------Sec11------*/
- #fullpage #section10 {
+ #sec11 {
  	background: #141719 url(img/ban8.jpg) no-repeat center;
  }
  /*#fullpage #section10 .container {
   padding: 10px 40px;
  }*/
- #fullpage #section10.is-visible {
+ #sec11.is-visible {
  	box-shadow: inset 0 0 900em 25em #000;
  	background: #141719 url(img/ban8.jpg) no-repeat center;
  	/*background: #141719 url(img/ban2.jpg) no-repeat center;*/
  }
- #fullpage #section10 h2 {
+ #sec11 h2 {
  	font-size: 64px;
  	font-weight: 500;
  	text-align: center;
  	color: #fff;
  }
- #fullpage #section10 h4 {
+ #sec11 h4 {
   margin-top: 15px;
  	font-size: 18px;
 	line-height: 19px;
@@ -1708,36 +1708,36 @@ p{
  	color: #fff;
  }
 
- #fullpage #section10 ul.part10 {
+ #sec11 ul.part10 {
   list-style: none;
  }
- #fullpage #section10 ul.part10 > li {
+ #sec11 ul.part10 > li {
  margin-bottom: 9%;
  }
- #fullpage #section10 ul.part10 li:last-child {
+ #sec11 ul.part10 li:last-child {
   margin-bottom: 0;
  }
 
- #fullpage #section10 ul > li ul.but {
+ #sec11 ul > li ul.but {
   list-style: none;
   text-align: center;
   vertical-align: top;
  }
- #fullpage #section10 ul > li ul.but > li {
+ #sec11 ul > li ul.but > li {
   /*display: inline-block;*/
   margin-bottom: 25px;
   text-align: center;
  }
- #fullpage #section10 ul > li ul.but > li:last-child {
+ #sec11 ul > li ul.but > li:last-child {
   /*display: inline-block;*/
  margin-bottom: 0;
  }
- #fullpage #section10 ul > li ul.but > li p {
+ #sec11 ul > li ul.but > li p {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
  }
- #fullpage #section10 ul > li ul.but > li #but-vid {
+ #sec11 ul > li ul.but > li #but-vid {
   display: block;
   margin: 0 auto;
   background: url(img/List_icons.png) no-repeat center;
@@ -1745,28 +1745,28 @@ p{
   width: 80px;
   height: 80px;
  }
- #fullpage #section10 ul > li ul.sec2-ul10 {
+ #sec11 ul > li ul.sec2-ul10 {
 	 padding-right: 50px;
 	 float: right;
 	 list-style: none;
  /*text-align: right;*/
 }
- #fullpage #section10 ul > li ul.sec2-ul10 > li {
+ #sec11 ul > li ul.sec2-ul10 > li {
  display: inline-block;
  padding: 5px 23px 5px 0;
  }
- #fullpage #section10 ul > li ul.sec2-ul10 > li:last-child {
+ #sec11 ul > li ul.sec2-ul10 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section10 ul > li ul.sec2-ul10 > li p {
+ #sec11 ul > li ul.sec2-ul10 > li p {
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
   color: #fff;
  }
- #fullpage #section10 ul > li ul.sec2-ul10 > li a {
+ #sec11 ul > li ul.sec2-ul10 > li a {
   display: block;
   cursor: pointer;
   font-size: 16px;
@@ -1813,19 +1813,19 @@ p{
  }
 
 /*-------Section12--------*/
- #fullpage #section11 {
+ #sec12 {
  	background: #141719 url(img/ban10.jpg) no-repeat center;
  }
  /*#fullpage #section5 .container {
  padding: 10px 40px;
  }*/
- #fullpage #section11 h2 {
+ #sec12 h2 {
  	font-size: 64px;
  	font-weight: 500;
  	text-align: center;
  	color: #fff;
  }
- #fullpage #section11 h4 {
+ #sec12 h4 {
  	margin-top: 15px;
  	font-size: 22px;
  	font-weight: 500;
@@ -1833,37 +1833,37 @@ p{
  	color: #fff;
  }
 
- #fullpage #section11 ul.part5 {
+ #sec12 ul.part5 {
   list-style: none;
  }
- #fullpage #section11 ul.part5 > li {
+ #sec12 ul.part5 > li {
  margin-bottom: 15.5%;
  }
- #fullpage #section11 ul.part5 li:last-child {
+ #sec12 ul.part5 li:last-child {
   margin-bottom: 0;
  }
-  #fullpage #section11 ul > li ul.sec2-ul5 {
+  #sec12 ul > li ul.sec2-ul11 {
  	float: right;
  	list-style: none;
  	padding-right: 50px;
  	/*text-align: right;*/
  }
- #fullpage #section5 ul > li ul.sec2-ul5 > li {
+ #sec12 ul > li ul.sec2-ul11 > li {
  display: inline-block;
  padding: 5px 23px 5px 0;
  }
- #fullpage #section5 ul > li ul.sec2-ul5 > li:last-child {
+ #sec12 ul > li ul.sec2-ul11 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section5 ul > li ul.sec2-ul5 > li p {
+ #sec12 ul > li ul.sec2-ul11 > li p {
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
   color: #fff;
  }
- #fullpage #section5 ul > li ul.sec2-ul5 > li a {
+ #sec12 ul > li ul.sec2-ul11 > li a {
   display: block;
   cursor: pointer;
   font-size: 16px;
@@ -1875,10 +1875,10 @@ p{
 
 
  /*---------Sec13------*/
- #fullpage #section12 {
+ #sec13 {
   background: #2572c0;
  }
- #fullpage #section12 h2 {
+ #sec13 h2 {
   font-size: 64px;
   line-height: 64px;
   font-weight: 500;
@@ -1886,7 +1886,7 @@ p{
   color: #fff;
   z-index: 5px;
  }
- #fullpage #section12 h5 {
+ #sec13 h5 {
   margin: 35px 180px 0;
   font-size: 22px;
   line-height: 22px;
@@ -1895,44 +1895,44 @@ p{
   color: #656565;
   z-index: 7px;
  }
- #fullpage #section12 ul.part12 {
+ #sec13 ul.part12 {
   list-style: none;
  }
- #fullpage #section12 ul.part12 > li {
+ #sec13 ul.part12 > li {
   margin-bottom: 8.5%;
  }
- #fullpage #section12 ul.part12 > li .partner {
+ #sec13 ul.part12 > li .partner {
 	 margin: 0 auto;
 	background: url(img/partner.jpg) no-repeat center;
 	width: 726px;
 	height: 218px;
  }
- #fullpage #section12 ul.part12 li:last-child {
+ #sec13 ul.part12 li:last-child {
   margin-bottom: 0;
  }
 
-  #fullpage #section12 ul > li ul.sec2-ul12 {
+  #sec13 ul > li ul.sec2-ul12 {
  	 padding-right: 50px;
  	 float: right;
  	 list-style: none;
  	/*text-align: right;*/
   }
- #fullpage #section12 ul > li ul.sec2-ul12 > li {
+ #sec13 ul > li ul.sec2-ul12 > li {
   display: inline-block;
   padding: 5px 23px 5px 0;
  }
- #fullpage #section12 ul > li ul.sec2-ul12 > li:last-child {
+ #sec13 ul > li ul.sec2-ul12 > li:last-child {
  /*margin-right: 0;*/
  background: url(img/str.png) no-repeat right;
  cursor: pointer;
  }
- #fullpage #section12 ul > li ul.sec2-ul12 > li p {
+ #sec13 ul > li ul.sec2-ul12 > li p {
   font-size: 16px;
   font-style: italic;
   font-weight: 600;
   color: #fff;
  }
- #fullpage #section12 ul > li ul.sec2-ul12 > li a {
+ #sec13 ul > li ul.sec2-ul12 > li a {
   display: block;
   cursor: pointer;
   font-size: 16px;
@@ -1944,19 +1944,19 @@ p{
 
 
  /*---------Sec14------*/
- #fullpage #section13 {
+ #sec14 {
   background: #141719 url(img/ban9.jpg) no-repeat center;
  }
  /*#fullpage #section10 .container {
   padding: 10px 40px;
  }*/
- #fullpage #section13 h2 {
+ #sec14 h2 {
   font-size: 64px;
   font-weight: 500;
   text-align: center;
   color: #fff;
  }
- #fullpage #section13 h4 {
+ #sec14 h4 {
   margin-top: 15px;
   font-size: 18px;
   line-height: 19px;
@@ -1965,19 +1965,19 @@ p{
   color: #fff;
  }
 
- #fullpage #section13 ul.part13 {
+ #sec14 ul.part13 {
   list-style: none;
  }
- #fullpage #section13 ul.part13 > li {
+ #sec14 ul.part13 > li {
  	margin-bottom: 7%;
  }
- #fullpage #section13 ul.part13 > li:nth-child(4) {
+ #sec14 ul.part13 > li:nth-child(4) {
 	 text-align: center;
  }
- #fullpage #section13 ul.part13 li:last-child {
+ #sec14 ul.part13 li:last-child {
   margin-bottom: 0;
  }
- #fullpage #section13 ul.part13 > li .now {
+ #sec14 ul.part13 > li .now {
 	padding: 12px 20px;
 	border: solid #fff 1px;
 	border-radius: 100px;
@@ -1988,21 +1988,21 @@ p{
 	text-align: center;
  }
 
- #fullpage #section13 ul > li ul.but {
+ #sec14 ul > li ul.but {
   list-style: none;
   text-align: center;
   vertical-align: top;
  }
- #fullpage #section13 ul > li ul.but > li {
+ #sec14 ul > li ul.but > li {
   /*display: inline-block;*/
   margin-bottom: 25px;
   text-align: center;
  }
- #fullpage #section13 ul > li ul.but > li:last-child {
+ #sec14 ul > li ul.but > li:last-child {
   /*display: inline-block;*/
  margin-bottom: 0;
  }
- #fullpage #section13 ul > li ul.but > li p {
+ #sec14 ul > li ul.but > li p {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -2015,28 +2015,28 @@ p{
   width: 80px;
   height: 80px;
  }*/
- #fullpage #section13 ul > li ul.sec2-ul13 {
+ #sec14 ul > li ul.sec2-ul13 {
 	padding-right: 50px;
 	float: right;
 	list-style: none;
  /*text-align: right;*/
  }
-#fullpage #section13 ul > li ul.sec2-ul13 > li {
+#sec14 ul > li ul.sec2-ul13 > li {
  display: inline-block;
  padding: 5px 23px 5px 0;
 }
-#fullpage #section13 ul > li ul.sec2-ul13 > li:last-child {
+#sec14 ul > li ul.sec2-ul13 > li:last-child {
 /*margin-right: 0;*/
 background: url(img/str.png) no-repeat right;
 cursor: pointer;
 }
-#fullpage #section13 ul > li ul.sec2-ul13 > li p {
+#sec14 ul > li ul.sec2-ul13 > li p {
  font-size: 16px;
  font-style: italic;
  font-weight: 600;
  color: #fff;
 }
-#fullpage #section13 ul > li ul.sec2-ul13 > li a {
+#sec14 ul > li ul.sec2-ul13 > li a {
  display: block;
  cursor: pointer;
  font-size: 16px;
@@ -2048,37 +2048,68 @@ cursor: pointer;
 
 
 /*---------Sec15------*/
-#fullpage #section14 {
+#sec15 {
 	padding: 0 180px;
  background: #141719;
  }
- #fullpage #section14 .row {
+#sec15 .row {
 	 z-index: 20px;
-  }
-#fullpage #section14 .sec2-ul14 {
-	/*padding-right: 50px;*/
-	text-align: right;
-	margin-top: -25px;
-	position: relative;
-	background: url(img/str.png) no-repeat right;
-	cursor: pointer;
-	z-index: 30px;
 }
-#fullpage #section14 h3 {
+#sec15 h3 {
 	padding-top: 400px;
 	margin-bottom: 15px;
 	font-size: 64px;
 	color: #fff;
 	text-align: center;
 }
-#fullpage #section14 p {
+#sec15 p {
 	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 17px;
 	color: #fff;
 	text-align: center;
 }
-#fullpage #section14 .sec2-ul14 a {
+
+#sec15 .sec2-ul14 {
+	position: relative;
+	z-index: 30px;
+	text-align: right;
+}
+#sec15 .sec2-ul14 ul {
+ /*padding-right: 50px;*/
+ float: right;
+ list-style: none;
+ 	margin-top: -30px;
+ /*margin-top: -60px;*/
+/*text-align: right;*/
+}
+#sec15 .sec2-ul14 ul > li {
+	display: inline-block;
+	 padding: 5px 23px 5px 0;
+}
+#sec15 .sec2-ul14 ul > li:last-child {
+	background: url(img/str.png) no-repeat right;
+	cursor: pointer;
+}
+#sec15 .sec2-ul14 ul > li a {
+ display: block;
+ cursor: pointer;
+ font-size: 16px;
+ font-style: italic;
+ color: #b9babb;
+ text-decoration: none;
+ /*background: 5px 5px url(img/str.png) no-repeat right;*/
+}
+
+/*#sec15 .sec2-ul14 {
+	position: relative;
+	text-align: right;
+	margin-top: -25px;
+	background: url(img/str.png) no-repeat right;
+	cursor: pointer;
+	z-index: 30px;
+}
+#sec15 .sec2-ul14 a {
  display: block;
  margin-right: 33px;
  cursor: pointer;
@@ -2086,16 +2117,15 @@ cursor: pointer;
  font-style: italic;
  color: #fff;
  text-decoration: none;
- /*background: 5px 5px url(img/str.png) no-repeat right;*/
-}
-#fullpage #section14 .list1 {
+}*/
+#sec15 .list1 {
 	padding: 10px;
 	height: 100vh;
 	background: url(img/list1.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
-#fullpage #section14 .list1 a {
+#sec15 .list1 a {
 	display: block;
 	margin: 0 auto;
 	background: url(img/batton.png) no-repeat center;
@@ -2104,7 +2134,7 @@ cursor: pointer;
 	text-align: center;
 	cursor: pointer;
 }
-#fullpage #section14 .list2 a {
+#sec15 .list2 a {
 	display: block;
 	margin: 0 auto;
 	background: url(img/batton_heart.png) no-repeat center;
@@ -2113,7 +2143,7 @@ cursor: pointer;
 	text-align: center;
 	cursor: pointer;
 }
-#fullpage #section14 .list3 a {
+#sec15 .list3 a {
 	display: block;
 	margin: 0 auto;
 	background: url(img/batton_group.png) no-repeat center;
@@ -2122,14 +2152,14 @@ cursor: pointer;
 	text-align: center;
 	cursor: pointer;
 }
-#fullpage #section14 .list2 {
+#sec15 .list2 {
 	padding: 10px;
 	height: 100vh;
 	background: url(img/list2.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
-#fullpage #section14 .list3 {
+#sec15 .list3 {
 	padding: 10px;
 	height: 100vh;
 	background: url(img/list3.jpg) no-repeat center center;
