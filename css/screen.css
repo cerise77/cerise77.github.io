@@ -491,7 +491,7 @@ ul.sec2-ul > li a {
   background-size: cover;
 }
 #sec4.is-visible {
-  box-shadow: inset 0 0 0 35em rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 0 60em rgba(0,0,0,0.2);
   /*background: #141719 url(img/ban2.jpg) no-repeat center;*/
 }
 #sec4 h2 {
@@ -1199,7 +1199,7 @@ margin-bottom: 0;
   padding: 10px 40px;
  }*/
  #sec11.is-visible {
-   box-shadow: inset 0 0 0 35em rgba(0,0,0,0.3);
+   box-shadow: inset 0 0 0 60em rgba(0,0,0,0.2);
    /*background: #141719 url(img/ban2.jpg) no-repeat center;*/
  }
  #sec11 h2 {
