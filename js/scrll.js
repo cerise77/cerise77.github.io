@@ -29,18 +29,35 @@ $(document).ready(function () {
     afterLoad: function(anchorLink, index) {
       //$header_top.css('background', 'rgba(0, 47, 77, .3)');
       $nav.css('background', 'rgba(0, 47, 77, .25)');
-      if (index == 5) {
-          $('#fp-nav').hide();
+      /*if (anchorLink == 'Section2') {
+          $('.header-top').css('background', 'rgba(0, 0, 0, 1)');
+        } else {
+          $('.header-top').css('background', 'rgba(0, 6, 7, 1)');
+        }*/
+
+        if (index == 2) {
+            $('#fp-nav').hide();
+          }
+
+        if(index == 9) {
+          $(".spincrement").spincrement({
+          from: 0,                // Стартовое число
+          decimalPlaces: 0,       // Сколько знаков оставлять после запятой
+          thousandSeparator: ",", // Разделитель тыcячных
+          duration: 1500          // Продолжительность анимации в миллисекундах
+          });
         }
     },
 
     onLeave: function(index, nextIndex, direction) {
+
       if(index == 5) {
         $('#fp-nav').show();
       }
     },
 
-    afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+
+    /*afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
       if(anchorLink == 'fifthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(false, 'up');
         $header_top.css('background', 'transparent');
@@ -56,7 +73,7 @@ $(document).ready(function () {
           }
         );
       }
-    },
+    },*/
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
       if(anchorLink == 'fifthSection' && slideIndex == 1) {

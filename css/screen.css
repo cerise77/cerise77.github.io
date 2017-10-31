@@ -88,7 +88,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body{
   background: #fff;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
   /*font-size: 12px;*/
 }
 
@@ -212,7 +212,7 @@ body.fp-viewing-fifthSection-1 #menu li:last-child a {
 .header-top {
     /*background: rgba(0, 47, 77, .3);
     height: 70px;*/
-    padding: 10px 10px 0;
+    padding: 35px 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -293,10 +293,12 @@ section {
 h2 {
     /*text-transform: lowercase;*/
     font-size: 5.7em;
+    line-height: 1.1em;
     margin-bottom: 20px;
     color: #fff;
     font-weight: 200;
     text-align: center;
+    font-family: "Roboto Light", sans-serif;
 }
 
 h3 {
@@ -306,6 +308,36 @@ h3 {
     text-align: center;
     color: #bababa;
 }
+
+.but-gal-vid {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 1380px) {
+  h2 {
+      /*text-transform: lowercase;*/
+      font-family: "Roboto Light", sans-serif;
+      font-size: 5.7em;
+      line-height: 1.1em;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 200;
+      text-align: center;
+  }
+
+  h3 {
+      font-weight: 300;
+      font-size: 2em;
+      line-height: 1.2em;
+      text-align: center;
+      color: #bababa;
+  }
+
+  .but-gal-vid {
+    margin-top: 130px;
+  }
+}
+
 
 .scroll-icon {
   position: absolute;
@@ -353,13 +385,10 @@ ul.sec2-ul > li a {
   background: #141719 url(img/ban1a.jpg) no-repeat center;
   background-size: cover;
 }
-/*#sec1 h2 {
-  font-size: 64px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
+#sec1 h2 {
+  margin-top: 100px;
 }
-#sec1 h3 {
+/*#sec1 h3 {
   margin: 15px 180px 0;
   font-size: 22px;
   font-weight: 500;
@@ -429,7 +458,8 @@ ul.sec2-ul > li a {
 
 /*---------Sec2------*/
 #sec2 {
- background: #fff;
+  background: #fff url(img/ban0.jpg) no-repeat center;
+  background-size: cover;
 }
 #sec2 h2 {
   color: #434343;
@@ -459,13 +489,11 @@ ul.sec2-ul > li a {
  background: url(img/kharkiv.png) no-repeat right;
 }
 #sec3 h2 {
-  padding-left: 5%;
   text-align: left;
   color: #fff;
 }
 #sec3 h4 {
-  padding-left: 5%;
- font-size: 200px;
+ font-size: 180px;
  line-height: 200px;
   font-weight: 900;
   text-align: left;
@@ -473,14 +501,25 @@ ul.sec2-ul > li a {
   color: #012d49;
 }
 #sec3 h5 {
-  padding-left: 5%;
- margin-top: 20px;
+ margin-top: 5px;
  font-size: 14px;
  line-height: 14px;
   font-weight: 600;
   text-align: left;
   color: #000;
  /*width: 400px;*/
+}
+@media screen and (max-width: 1380px) {
+  #sec3 h2 {
+    padding-left: 12%;
+    margin-top: 60px;
+  }
+  #sec3 h4 {
+    padding-left: 12%;
+  }
+  #sec3 h5 {
+   padding-left: 12%;
+  }
 }
 
 
@@ -495,16 +534,13 @@ ul.sec2-ul > li a {
   /*background: #141719 url(img/ban2.jpg) no-repeat center;*/
 }
 #sec4 h2 {
-  padding-left: 5%;
   text-align: left;
 }
 #sec4 h3 {
-  padding-left: 5%;
   text-align: left;
 }
 
 #sec4 ul.but {
-  margin-top: 60px;
  list-style: none;
  text-align: center;
  vertical-align: top;
@@ -530,6 +566,19 @@ margin-bottom: 0;
  text-align: center;
  width: 80px;
  height: 80px;
+}
+
+@media screen and (max-width: 1380px) {
+  #sec4 h2 {
+    padding-left: 14%;
+    margin-top: 130px;
+  }
+  #sec4 h3 {
+    padding-left: 14%;
+  }
+  #sec4 ul.but {
+    margin-top: 90px;
+  }
 }
 
 
@@ -561,7 +610,7 @@ margin-bottom: 0;
  /*overflow-y: auto;*/
  -webkit-overflow-scrolling: touch;
  z-index: 7;
- padding: 60px 20px 50px 100px;
+ padding: 85px 50px 50px 50px;
  overflow-y: scroll;
 }
 #main-nav.speed-in {
@@ -704,18 +753,29 @@ bottom: 30px;*/
 padding: 10px 0 10px 40px;
 }
 #sec7 h2 {
- padding-left: 5%;
  text-align: left;
 }
 #sec7 h3 {
- padding-left: 5%;
  color: #fff;
  text-align: left;
 }
 
+@media screen and (max-width: 1380px) {
+  #sec7 h2 {
+    padding-left: 14%;
+    margin-top: 100px;
+  }
+  #sec7 h3 {
+    padding-left: 14%;
+    text-align: left;
+  }
+  #sec7 ul.but {
+    margin-top: 10px;
+  }
+}
+
 
 #sec7 ul.but {
-  margin-top: 60px;
  list-style: none;
  text-align: center;
  vertical-align: top;
@@ -753,7 +813,7 @@ margin-bottom: 0;
  padding: 20px 0;
  display: none;
  width: 100%;
- height: 92%;
+ height: 88%;
  /*z-index: 10;*/
  background: #000;
  transition-duration: 0.9s;
@@ -786,7 +846,7 @@ margin-bottom: 0;
  #close-v {
    position: relative;
    left: 0;
-   margin-top: 40px;
+   margin-top: 62px;
    margin-right: 20px;
    text-align: right;
    z-index: 15px;
@@ -824,12 +884,21 @@ margin-bottom: 0;
   /*padding: 10px 40px;*/
  }
  #sec8 h2 {
-   padding-left: 5%;
   text-align: left;
  }
  #sec8 h3 {
-  padding-left: 5%;
   text-align: left;
+ }
+
+ @media screen and (max-width: 1380px) {
+   #sec8 h2 {
+     padding-left: 14%;
+     margin-top: 100px;
+   }
+   #sec8 h3 {
+     padding-left: 14%;
+     text-align: left;
+   }
  }
 
  #sec8 ul.but {
@@ -879,7 +948,7 @@ margin-bottom: 0;
  #close-g {
    position: relative;
    left: 0;
-   margin-top: 40px;
+   margin-top: 70px;
    margin-right: 20px;
    text-align: right;
    vertical-align: top;
@@ -976,7 +1045,7 @@ margin-bottom: 0;
   background: #2572c0;
  }
  #sec9 h2 {
-   margin-bottom: 40px;
+   margin-bottom: 70px;
  }
 
  #sec9 ul.list {
@@ -986,46 +1055,47 @@ margin-bottom: 0;
  #sec9 ul.list > li {
    display: inline-block;
    text-align: center;
-   margin-right: 80px;
+   margin-right: 50px;
  }
  #sec9 ul.list > li:last-child {
   margin-right: 0;
  }
  #sec9 ul.list > li .rect1 {
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
   width: 36px;
   height: 36px;
   background: url(img/recrt1.png) no-repeat center center;
   text-align: center;
  }
  #sec9 ul.list > li .rect2 {
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
   width: 36px;
   height: 36px;
   background: url(img/recrt2.png) no-repeat center center;
   text-align: center;
  }
  #sec9 ul.list > li .rect3 {
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
   width: 36px;
   height: 36px;
   background: url(img/recrt3.png) no-repeat center center;
   text-align: center;
  }
  #sec9 ul.list > li .rect4 {
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
   width: 36px;
   height: 36px;
   background: url(img/recrt4.png) no-repeat center center;
   text-align: center;
  }
- #sec9 ul.list > li h4 {
-   margin-bottom: 20px;
+ #sec9 ul.list > li span {
+  margin-bottom: 20px;
   font-size: 48px;
   font-weight: 600;
   color: #012d49;
  }
  #sec9 ul.list > li p {
+  margin-top: 20px;
  font-size: 14px;
  color: #fff;
  }
@@ -1041,15 +1111,26 @@ margin-bottom: 0;
   /*padding: 10px 40px;*/
  }
  #sec10 h2 {
-   padding-left: 5%;
   text-align: left;
  }
  #sec10 h3 {
-  padding-left: 5%;
   text-align: left;
   color: #fff;
  }
 
+ @media screen and (max-width: 1380px) {
+   #sec10 h2 {
+     padding-left: 14%;
+     margin-top: 100px;
+   }
+   #sec10 h3 {
+     padding-left: 14%;
+     text-align: left;
+   }
+   #sec10 ul.but {
+     margin-top: 10px;
+   }
+ }
 
  #sec10 ul.but {
   margin-top: 60px;
@@ -1099,7 +1180,7 @@ margin-bottom: 0;
  #close-p {
    position: relative;
    left: 0;
-   margin-top: 40px;
+   margin-top: 70px;
    margin-right: 20px;
    text-align: right;
    vertical-align: top;
@@ -1207,6 +1288,16 @@ margin-bottom: 0;
  #sec11 h3 {
   color: #fff;
  }
+ @media screen and (max-width: 1380px) {
+   #sec11 h2 {
+     margin-top: 140px;
+   }
+   #sec11 h3 {
+   }
+   #sec11 ul.but {
+     margin-top: 10px;
+   }
+ }
 
  #sec11 ul.but {
    margin-top: 60px;
@@ -1251,7 +1342,7 @@ margin-bottom: 0;
   /*overflow-y: auto;*/
   -webkit-overflow-scrolling: touch;
   z-index: 7;
-  padding: 60px 20px 50px 100px;
+  padding: 85px 50px 50px 50px;
   overflow-y: scroll;
  }
  #left-nav.speed-in {
@@ -1287,7 +1378,7 @@ margin-bottom: 0;
 
  /*-------Section12--------*/
   #sec12 {
-  	background: #141719 url(img/ban10a.jpg) no-repeat center;
+  	background: #141719 url(img/ban10b.jpg) no-repeat center;
     background-size: cover;
   }
   /*#fullpage #section5 .container {
@@ -1338,11 +1429,12 @@ margin-bottom: 0;
    color: #fff;
   }
   #sec14 .now {
-     padding: 12px 20px;
-   border: solid #fff 1px;
+   background: #fff;
+   padding: 12px 20px;
+   /*border: solid #fff 1px;*/
    border-radius: 100px;
    font-size: 16px;
-   color: #fff;
+   color: #0c0c0c;
    text-transform: uppercase;
    text-decoration: none;
    text-align: center;
@@ -1387,22 +1479,33 @@ margin-bottom: 0;
   	z-index: 20px;
   }
   #sec15 h5 {
-  	padding-top: 380px;
-  	margin-bottom: 15px;
-  	font-size: 64px;
-  	color: #fff;
-  	text-align: center;
+    padding-top: 380px;
+    margin-bottom: 15px;
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto Light", sans-serif;
   }
   #sec15 p {
-  	margin-bottom: 20px;
-  	font-size: 16px;
-  	line-height: 17px;
-  	color: #fff;
-  	text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1380px) {
+    #sec15 h5 {
+      padding-top: 435px;
+      margin-bottom: 15px;
+      font-size: 58px;
+      color: #fff;
+      text-align: center;
+    }
   }
 
   #sec15 .sec2-ul {
-    mrg
+
   }
 
   /*#sec15 .sec2-ul14 {

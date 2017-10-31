@@ -217,6 +217,27 @@ $(document).ready(function () {
 
 
 
+  /*$('#fun-level').animateNumber(
+    {
+      number: 100,
+      color: 'green', // требуется jquery.color
+      'font-size': '50px',
+
+      easing: 'easeInQuad', // требуется jquery.easing
+
+      numberStep: function(now, tween) {
+        var floored_number = Math.floor(now),
+            target = $(tween.elem);
+
+        target.text(floored_number + ' %');
+      }
+    },
+    1800
+  );*/
+
+
+
+
   var searchBtn = '.search-btn', searchSlide = '.search-slide', searchTxt = '.search-slide input[type=text]', searchClose = '.search-close', searchSpeed = 300;
   $(searchBtn).click(function () {
       $(searchSlide).animate({ 'width': '15.5625em' }, searchSpeed);
@@ -240,7 +261,7 @@ $(document).ready(function () {
     }*/
 
 
-    function toggle_left_visibility(volet, background_volet, body) {
+    /*function toggle_left_visibility(volet, background_volet, body) {
         if (volet.hasClass('speed-in')) {
             volet.removeClass('speed-in');
             background_volet.removeClass('is-visible');
@@ -250,4 +271,4 @@ $(document).ready(function () {
             background_volet.addClass('is-visible');
             //body.addClass('overflow-hidden');
         }
-    }
+    }*/
