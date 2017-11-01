@@ -1378,19 +1378,22 @@ margin-bottom: 0;
 
  /*-------Section12--------*/
   #sec12 {
-  	background: #141719 url(img/ban10b.jpg) no-repeat center;
-    background-size: cover;
+  	/*background: #141719 url(img/ban10b.jpg) no-repeat center;
+    background-size: cover;*/
   }
   /*#fullpage #section5 .container {
   padding: 10px 40px;
   }*/
   #sec12 h2 {
+    z-index: 20;
   }
   #sec12 h3 {
+    z-index: 22;
   	color: #fff;
   }
-
-
+  #sec12 #sec12-ul {
+    position: fixed;
+  }
 
   /*---------Sec13------*/
   #sec13 {
@@ -1418,9 +1421,10 @@ margin-bottom: 0;
    padding: 10px 40px;
   }*/
   #sec14 h2 {
+    margin-bottom: 120px;
   }
   #sec14 h4 {
-   margin-top: 15px;
+   margin-top: 45px;
    margin-bottom: 50px;
    font-size: 18px;
    line-height: 19px;
@@ -1467,6 +1471,97 @@ margin-bottom: 0;
    width: 80px;
    height: 80px;
   }*/
+  /*.line {
+    display: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }*/
+.line {
+  z-index: 50;
+}
+
+  #ligne {
+    position: relative;
+    z-index: 30;
+    /*left: 0px; top: 0px;*/
+    /*margin: 0 auto;*/
+    /*width: 320px;
+    height: 30px;*/
+    /*padding: 0;*/
+  }
+
+  .border {
+    position: absolute;
+    top: -36px;
+    margin: 0 35%;
+  }
+  .borderh { height: 0px; border: 7px solid #2572c0; }
+  /*.borderv { width: 0px; border: 1px solid black; }*/
+
+  #topbar {
+    /*margin: 0 auto;*/
+    /*left: 0px; top: 0px;*/
+  }
+  /*#rightbar {
+    right: 0px; top: 0px;
+  }
+  #bottombar {
+    right: 0px; bottom: 0px;
+  }
+  #leftbar {
+    left: 0px; bottom: 0px;
+  }*/
+
+.pourcant {
+  margin-top: -40px;
+  z-index: 55;
+}
+.chiffre {
+  width: 100px;
+  height: 40px;
+  padding: 20px;
+  background: #2572c0;
+  font: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/*.circles {
+  margin-bottom: -10px;
+}*/
+
+.circle {
+  width: 100px;
+  margin: 6px 6px 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.circle canvas {
+  vertical-align: top;
+}
+
+.circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #fff;
+}
+
 
 
   /*---------Sec15------*/

@@ -6,8 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet prefetch" href="css/screen.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="stylesheet" href="css/bootstrap-progressbar-2.3.1.css">
+  <link rel="stylesheet" href="css/bootstrap-progressbar-2.3.1.min.css">
+  <link rel="stylesheet prefetch" href="css/screen.css">
+  <!--<link href="css/foundation.css" rel="stylesheet" type="text/css" />-->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -364,22 +368,22 @@
         <ul class="list">
           <li>
             <div class="rect1"></div>
-            <span class="spincrement">560891</span>
+            <span class="chiffret">0</span>
             <p>Собрано средств</p>
           </li>
           <li>
             <div class="rect2"></div>
-            <span class="spincrement">150</span>
+            <span class="chiffres">0</span>
             <p>Благополучателей</p>
           </li>
           <li>
             <div class="rect3"></div>
-            <span class="spincrement">65</span>
+            <span class="chiffreb">0</span>
             <p>Проектов</p>
           </li>
           <li>
             <div class="rect4"></div>
-            <span class="spincrement">45</span>
+            <span class="chiffrek">0</span>
             <p>Партнеров</p>
           </li>
         </ul>
@@ -492,17 +496,27 @@
     </section>
 
     <section id="sec12" class="vertical-scrolling">
-      <h2>Замена окон и двери в<br>
+      <!--<h2>Замена окон и двери в<br>
         Панютинской школе №2</h2>
       <h3>Здание школы – ровесник самого учебного учреждения, окна в<br>
-        котором не менялись с 1960х годов.</h3>
+        котором не менялись с 1960х годов.</h3>-->
 
-        <div class="scroll-icon">
-          <ul class="sec2-ul">
+      <div class="twentytwenty-container" data-orientation="vertical">
+        <img src="img/ban10p.jpg" />
+        <img src="img/ban111.jpg" />
+      </div>
+
+      <!--<h2>Замена окон и двери в<br>
+        Панютинской школе №2</h2>
+      <h3>Здание школы – ровесник самого учебного учреждения, окна в<br>
+        котором не менялись с 1960х годов.</h3>-->
+
+        <!--<div class="scroll-icon">
+          <ul id="sec12-ul" class="sec2-ul">
             <li><p>Смотреть полный отчет</p></li>
             <li><a>Источник</a></li>
           </ul>
-        </div>
+        </div>-->
 
     </section>
 
@@ -522,6 +536,19 @@
     <section id="sec14" class="vertical-scrolling">
         <h2>Помощь неврологическому<br>
           отделению детской больницы №5</h2>
+
+          <!--<svg width="400" height="30" viewBox="0 0 400 30">
+            <line class="line" x1="0" y1="0" x2="400" y2="0" style="stroke:rgb(255,255,255);stroke-width:10" stroke-dasharray="5" />
+          </svg>
+          <div id="ligne">
+              <div class="border borderh" id="topbar"></div>
+          </div>
+        <p class="pourcant"><span class="chiffre">0</span>%</p>-->
+
+        <div class="third circle">
+          <strong></strong>
+        </div>
+
         <h4>Собрано 57тыс.грн. Необходимо 127тыс.грн</h4>
         <a href="#" class="now">помочь сейчас</a>
 
@@ -569,14 +596,27 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/jquery.spincrement.js"></script>
+  <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+
+  <!--<script   src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>-->
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
 
   <script type="text/javascript" src="js/scrll.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
+  <script type="text/javascript" src="js/jquery.spincrement.js"></script>
+
   <script type="text/javascript" src="js/scrl.js"></script>
   <script type="text/javascript" src="js/carusel.js"></script>
-  <!-- js файлы плагина fullpage -->
+
+  <script>
+  $(function(){
+    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+  });
+  </script>
 
 </body>
 </html>

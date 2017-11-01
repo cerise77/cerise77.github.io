@@ -295,7 +295,10 @@ $(document).ready(function () {
     1800
   );*/
 
-
+  /*$('.progress .bar').progressbar({
+    update: function(current_percentage) { $('#update').html(current_percentage); },
+    //done: function() { $('#done').html('yeah! done!'); }
+  });*/
 
 
   var searchBtn = '.search-btn', searchSlide = '.search-slide', searchTxt = '.search-slide input[type=text]', searchClose = '.search-close', searchSpeed = 300;

@@ -40,13 +40,84 @@ $(document).ready(function () {
           }
 
         if(index == 9) {
-          $(".spincrement").spincrement({
+          /*$(".spincrement").spincrement({
           from: 0,                // Стартовое число
           decimalPlaces: 0,       // Сколько знаков оставлять после запятой
           thousandSeparator: ",", // Разделитель тыcячных
           duration: 1500          // Продолжительность анимации в миллисекундах
-          });
+        });*/
+        var currentNumbet = $('.chiffret').text();
+        $({numberValue: currentNumbet}).animate({numberValue: 560891}, {
+            duration: 2500,
+            easing: 'linear',
+            step: function() {
+                $('.chiffret').text(Math.ceil(this.numberValue));
+            }
+        });
+
+        var currentNumbes = $('.chiffres').text();
+        $({numberValue: currentNumbes}).animate({numberValue: 150}, {
+            duration: 2500,
+            easing: 'linear',
+            step: function() {
+                $('.chiffres').text(Math.ceil(this.numberValue));
+            }
+        });
+
+        var currentNumbeb = $('.chiffreb').text();
+        $({numberValue: currentNumbeb}).animate({numberValue: 65}, {
+            duration: 2500,
+            easing: 'linear',
+            step: function() {
+                $('.chiffreb').text(Math.ceil(this.numberValue));
+            }
+        });
+
+        var currentNumbek = $('.chiffrek').text();
+        $({numberValue: currentNumbek}).animate({numberValue: 45}, {
+            duration: 2500,
+            easing: 'linear',
+            step: function() {
+                $('.chiffrek').text(Math.ceil(this.numberValue));
+            }
+        });
+
         }
+
+        if(index == 14) {
+
+          /*$(function() {
+            $("#topbar").show();
+            $("#topbar").animate({width: "200px"},2500, function() {
+            });
+          });
+
+          var currentNumber = $('.chiffre').text();
+          $({numberValue: currentNumber}).animate({numberValue: 40}, {
+              duration: 2500,
+              easing: 'linear',
+              step: function() {
+                  $('.chiffre').text(Math.ceil(this.numberValue));
+              }
+          });*/
+
+
+          $('.third.circle').circleProgress({
+            value: 40,
+            startAngle: 0,
+            value: 0.5,
+            lineCap: 'round',
+            fill: {color: '#2572c0'}
+            }).on('circle-animation-progress', function(event, progress, stepValue) {
+              $(this).find('strong').html(Math.round(50 * progress) + '<i>%</i>');
+          });
+
+        }
+
+    },
+
+    afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+
     },
 
     onLeave: function(index, nextIndex, direction) {
@@ -54,6 +125,7 @@ $(document).ready(function () {
       if(index == 5) {
         $('#fp-nav').show();
       }
+
     },
 
 
