@@ -35,9 +35,169 @@ $(document).ready(function () {
           $('.header-top').css('background', 'rgba(0, 6, 7, 1)');
         }*/
 
+        if (index == 1) {
+            $('#text-menu').css('color', '#fff');
+            $('#contact').css('color', '#fff');
+            $('#contact').css('border-color', '#fff');
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+
+            $("#logo1").attr("fill","#fff");
+            $("#logo2").attr("fill","#fff");
+            $("#logo3").attr("fill","#fff");
+            $("#logo4").attr("fill","#fff");
+            $("#logo5").attr("fill","#fff");
+            $("#logo6").attr("fill","#fff");
+            $("#logo7").attr("fill","#fff");
+            $("#logo8").attr("fill","#fff");
+            $("#logo9").attr("fill","#fff");
+            $("#logo10").attr("fill","#fff");
+            $("#logo11").attr("fill","#fff");
+            $("#logo12").attr("fill","#fff");
+            $("#logo13").attr("fill","#fff");
+            $("#logo14").attr("fill","#fff");
+            $("#logo15").attr("fill","#fff");
+            $("#logo16").attr("fill","#fff");
+            $("#logo17").attr("fill","#fff");
+            $("#logo18").attr("fill","#fff");
+            $("#rectungle").attr("fill","#fff");
+            $("#logo19").attr("fill","#fff");
+            $("#logo20").attr("fill","#fff");
+            $("#logo21").attr("fill","#fff");
+            $("#logo22").attr("fill","#fff");
+            $("#logo23").attr("fill","#fff");
+            $("#logo24").attr("fill","#fff");
+            $("#logo25").attr("fill","#fff");
+            $("#logo26").attr("fill","#fff");
+            $("#logo27").attr("fill","#fff");
+            $("#logo28").attr("fill","#fff");
+            $("#logo29").attr("fill","#fff");
+            $("#logo30").attr("fill","#fff");
+            $("#logo31").attr("fill","#fff");
+            $("#logo32").attr("fill","#fff");
+            $("#logo33").attr("fill","#fff");
+            $("#logo34").attr("fill","#fff");
+            $("#logo35").attr("fill","#fff");
+            $("#logo36").attr("fill","#fff");
+            $("#logo37").attr("fill","#fff");
+            $("#logo38").attr("fill","#fff");
+            $("#logo39").attr("fill","#fff");
+        }
+
         if (index == 2) {
-            $('#fp-nav').hide();
-          }
+            $('#text-menu').css('color', '#000');
+            $('#contact').css('color', '#000');
+            $('#contact').css('border-color', '#000');
+            $("#triangle").attr("fill","#0000");
+            $("#search-close").attr("fill","#0000");
+
+            $("#logo1").attr("fill","#0000");
+            $("#logo2").attr("fill","#0000");
+            $("#logo3").attr("fill","#0000");
+            $("#logo4").attr("fill","#0000");
+            $("#logo5").attr("fill","#0000");
+            $("#logo6").attr("fill","#0000");
+            $("#logo7").attr("fill","#0000");
+            $("#logo8").attr("fill","#0000");
+            $("#logo9").attr("fill","#0000");
+            $("#logo10").attr("fill","#0000");
+            $("#logo11").attr("fill","#0000");
+            $("#logo12").attr("fill","#0000");
+            $("#logo13").attr("fill","#0000");
+            $("#logo14").attr("fill","#0000");
+            $("#logo15").attr("fill","#0000");
+            $("#logo16").attr("fill","#0000");
+            $("#logo17").attr("fill","#0000");
+            $("#logo18").attr("fill","#0000");
+            $("#rectungle").attr("fill","#0000");
+            $("#logo19").attr("fill","#0000");
+            $("#logo20").attr("fill","#0000");
+            $("#logo21").attr("fill","#0000");
+            $("#logo22").attr("fill","#0000");
+            $("#logo23").attr("fill","#0000");
+            $("#logo24").attr("fill","#0000");
+            $("#logo25").attr("fill","#0000");
+            $("#logo26").attr("fill","#0000");
+            $("#logo27").attr("fill","#0000");
+            $("#logo28").attr("fill","#0000");
+            $("#logo29").attr("fill","#0000");
+            $("#logo30").attr("fill","#0000");
+            $("#logo31").attr("fill","#0000");
+            $("#logo32").attr("fill","#0000");
+            $("#logo33").attr("fill","#0000");
+            $("#logo34").attr("fill","#0000");
+            $("#logo35").attr("fill","#0000");
+            $("#logo36").attr("fill","#0000");
+            $("#logo37").attr("fill","#0000");
+            $("#logo38").attr("fill","#0000");
+            $("#logo39").attr("fill","#0000");
+            //$('#fp-nav').hide();
+            $("#text-sec2-1").fadeIn("100000");
+            $("#text-sec2-2").fadeIn("100000");
+
+        }
+
+        if (index == 3) {
+            $('#text-menu').css('color', '#fff');
+            $('#contact').css('color', '#fff');
+            $('#contact').css('border-color', '#fff');
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+
+            $("#logo1").attr("fill","#fff");
+            $("#logo2").attr("fill","#fff");
+            $("#logo3").attr("fill","#fff");
+            $("#logo4").attr("fill","#fff");
+            $("#logo5").attr("fill","#fff");
+            $("#logo6").attr("fill","#fff");
+            $("#logo7").attr("fill","#fff");
+            $("#logo8").attr("fill","#fff");
+            $("#logo9").attr("fill","#fff");
+            $("#logo10").attr("fill","#fff");
+            $("#logo11").attr("fill","#fff");
+            $("#logo12").attr("fill","#fff");
+            $("#logo13").attr("fill","#fff");
+            $("#logo14").attr("fill","#fff");
+            $("#logo15").attr("fill","#fff");
+            $("#logo16").attr("fill","#fff");
+            $("#logo17").attr("fill","#fff");
+            $("#logo18").attr("fill","#fff");
+            $("#rectungle").attr("fill","#fff");
+            $("#logo19").attr("fill","#fff");
+            $("#logo20").attr("fill","#fff");
+            $("#logo21").attr("fill","#fff");
+            $("#logo22").attr("fill","#fff");
+            $("#logo23").attr("fill","#fff");
+            $("#logo24").attr("fill","#fff");
+            $("#logo25").attr("fill","#fff");
+            $("#logo26").attr("fill","#fff");
+            $("#logo27").attr("fill","#fff");
+            $("#logo28").attr("fill","#fff");
+            $("#logo29").attr("fill","#fff");
+            $("#logo30").attr("fill","#fff");
+            $("#logo31").attr("fill","#fff");
+            $("#logo32").attr("fill","#fff");
+            $("#logo33").attr("fill","#fff");
+            $("#logo34").attr("fill","#fff");
+            $("#logo35").attr("fill","#fff");
+            $("#logo36").attr("fill","#fff");
+            $("#logo37").attr("fill","#fff");
+            $("#logo38").attr("fill","#fff");
+            $("#logo39").attr("fill","#fff");
+        }
+
+        if (index == 5) {
+            //$('#fp-nav').hide();
+            $("#text-sec5-1").fadeIn("100000");
+            $("#text-sec5-2").fadeIn("100000");
+
+        }
+
+        if (index == 6) {
+            //$('#fp-nav').hide();
+            $("#text-sec6-1").fadeIn("100000");
+            $("#text-sec6-2").fadeIn("100000");
+        }
 
         if(index == 9) {
           /*$(".spincrement").spincrement({
@@ -104,10 +264,10 @@ $(document).ready(function () {
 
           $('.third.circle').circleProgress({
             value: 40,
-            startAngle: 0,
+            startAngle: 55,
             value: 0.5,
             lineCap: 'round',
-            fill: {color: '#2572c0'}
+            fill: {color: '#ff7903'}
             }).on('circle-animation-progress', function(event, progress, stepValue) {
               $(this).find('strong').html(Math.round(50 * progress) + '<i>%</i>');
           });
