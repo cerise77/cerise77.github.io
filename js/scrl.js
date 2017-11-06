@@ -122,21 +122,54 @@ $('#close-left').on('click', function () {
     $('#sec11').removeClass('is-visible');
 });*/
 
-document.getElementById('but-vid').onclick = function() {
+/*document.getElementById('but-vid').onclick = function() {
   document.getElementById("left-nav").classList.toggle('speed-in');
   document.getElementById("sec11").classList.toggle('is-visible');
+
+  var butShow = document.getElementById('but-vid');
+  //butWar.style.display = 'none'; //or
+  butShow.style.visibility = 'hidden';
+
+  var butStop = document.getElementById('button-close2');
+  //butWar.style.display = 'block'; //or
+  butStop.style.visibility = 'visible';
 }
 
 function toggletwoVideo(states) {
   document.getElementById("left-nav").classList.remove('speed-in');
   document.getElementById("sec11").classList.remove('is-visible');
+
+  var batShow = document.getElementById('but-vid');
+  //butWar.style.display = 'none'; //or
+  batShow.style.visibility = 'visible';
+
+  var batStop = document.getElementById('button-close2');
+  //butWar.style.display = 'block'; //or
+  batStop.style.visibility = 'hidden';
+
   // if state == 'hide', hide. Else: show video
   var dir = document.getElementById("left-nav");
   var iriframe = dir.getElementsByTagName("iframe")[0].contentWindow;
   //div.style.display = state == 'stop' ? 'none' : '';
   func = states == 'stop' ? 'pauseVideo' : 'playVideo';
   iriframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
-}
+}*/
+
+/*$('#button').on('click', function () {
+  $('#main-nav').toggleClass('speed-in');
+  $('#sec4').toggleClass('is-visible');
+  $("#button-close1").show("1000");
+  $("#button").hide("100");
+
+});
+
+$('#button-close1').on('click', function () {
+  $('#main-nav').removeClass('speed-in');
+  $('#sec4').removeClass('is-visible');
+  $("#button").show("100");
+  $("#button-close1").hide("1000");
+});*/
+
 
 /*function toggleVideo(state) {
   document.getElementById("video").classList.remove('speed-in');
@@ -223,12 +256,40 @@ $(document).ready(function () {
   $('#button').on('click', function () {
     $('#main-nav').toggleClass('speed-in');
     $('#sec4').toggleClass('is-visible');
+    $("#button-close1").show("1000");
+    $("#button").hide("100");
+
     //console.log("dvdfnkgfbk");
   });
 
-  $('#close-nav').on('click', function () {
+  $('#button-close1').on('click', function () {
     $('#main-nav').removeClass('speed-in');
     $('#sec4').removeClass('is-visible');
+    $("#button").show("100");
+    $("#button-close1").hide("1000");
+  });
+
+
+
+
+
+  $('#but-vid').on('click', function () {
+    $('#left-nav').toggleClass('speed-in');
+    $('#sec11').toggleClass('is-visible');
+    $("#button-close2").show("1000");
+    $("#but-vid").hide("100");
+
+    //console.log("dvdfnkgfbk");
+  });
+
+  $('#button-close2').on('click', function () {
+    $('#left-nav').removeClass('speed-in');
+    $('#sec11').removeClass('is-visible');
+    $("#but-vid").show("100");
+    $("#button-close2").hide("1000");
+
+    $('#video-left')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');   
+
   });
 
 
@@ -247,14 +308,27 @@ $(document).ready(function () {
 
   $('#linkb').on('click', function () {
     $('#linkb-part').toggleClass('speed-in');
+    $("#menu-bottom").hide("100");
     //console.log("dvdfnkgfbk");
   });
 
   $('#close').on('click', function () {
       $('#linkb-part').removeClass('speed-in');
+      $("#menu-bottom").show("100");
   });
 
 
+
+  $('#contact').on('click', function () {
+    $('#main-right').toggleClass('speed-in');
+    event.stopPropagation();
+    //console.log("dvdfnkgfbk");
+  });
+
+  $('body').on('click', function () {
+      $('#main-right').removeClass('speed-in');
+      //console.log("dvdfnkgfbk");
+  });
 
   /*$('#vid').on('click', function () {
     $('#video').toggleClass('speed-in');
@@ -313,6 +387,7 @@ $(document).ready(function () {
   });
 
 
+});
     /*function toggle_panel_visibility(panel, background_layer, body) {
         if (panel.hasClass('speed-in')) {
             panel.removeClass('speed-in');
@@ -335,4 +410,3 @@ $(document).ready(function () {
             //body.addClass('overflow-hidden');
         }
     }*/
-  });
