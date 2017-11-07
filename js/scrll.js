@@ -42,7 +42,11 @@ $(document).ready(function () {
             $("#triangle").attr("fill","#fff");
             $("#search-close").attr("fill","#fff");
 
-            $("#logo1").attr("fill","#fff");
+            $('#logo').css('color', '#fff');
+            $('#logo').css('border-right-color', '#fff');
+            $('#logo2').css('color', '#fff');
+
+            /*$("#logo1").attr("fill","#fff");
             $("#logo2").attr("fill","#fff");
             $("#logo3").attr("fill","#fff");
             $("#logo4").attr("fill","#fff");
@@ -81,17 +85,21 @@ $(document).ready(function () {
             $("#logo36").attr("fill","#fff");
             $("#logo37").attr("fill","#fff");
             $("#logo38").attr("fill","#fff");
-            $("#logo39").attr("fill","#fff");
+            $("#logo39").attr("fill","#fff");*/
         }
 
         if (index == 2) {
             $('#text-menu').css('color', '#000');
             $('#contact').css('color', '#000');
             $('#contact').css('border-color', '#000');
-            $("#triangle").attr("fill","#0000");
-            $("#search-close").attr("fill","#0000");
+            $("#triangle").attr("fill","#000");
+            $("#search-close").attr("fill","#000");
 
-            $("#logo1").attr("fill","#0000");
+            $('#logo').css('color', '#000');
+            $('#logo').css('border-right-color', '#000');
+            $('#logo2').css('color', '#000');
+
+            /*$("#logo1").attr("fill","#0000");
             $("#logo2").attr("fill","#0000");
             $("#logo3").attr("fill","#0000");
             $("#logo4").attr("fill","#0000");
@@ -130,7 +138,7 @@ $(document).ready(function () {
             $("#logo36").attr("fill","#0000");
             $("#logo37").attr("fill","#0000");
             $("#logo38").attr("fill","#0000");
-            $("#logo39").attr("fill","#0000");
+            $("#logo39").attr("fill","#0000");*/
             //$('#fp-nav').hide();
             $("#text-sec2-1").fadeIn("100000");
             $("#text-sec2-2").fadeIn("100000");
@@ -144,7 +152,11 @@ $(document).ready(function () {
             $("#triangle").attr("fill","#fff");
             $("#search-close").attr("fill","#fff");
 
-            $("#logo1").attr("fill","#fff");
+            $('#logo').css('color', '#fff');
+            $('#logo').css('border-right-color', '#fff');
+            $('#logo2').css('color', '#fff');
+
+            /*$("#logo1").attr("fill","#fff");
             $("#logo2").attr("fill","#fff");
             $("#logo3").attr("fill","#fff");
             $("#logo4").attr("fill","#fff");
@@ -183,7 +195,13 @@ $(document).ready(function () {
             $("#logo36").attr("fill","#fff");
             $("#logo37").attr("fill","#fff");
             $("#logo38").attr("fill","#fff");
-            $("#logo39").attr("fill","#fff");
+            $("#logo39").attr("fill","#fff");*/
+        }
+
+        if (index == 4) {
+          $("#triangle").attr("fill","#fff");
+          $("#search-close").attr("fill","#fff");
+
         }
 
         if (index == 5) {
@@ -191,12 +209,28 @@ $(document).ready(function () {
             $("#text-sec5-1").fadeIn("100000");
             $("#text-sec5-2").fadeIn("100000");
 
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+
         }
 
         if (index == 6) {
             //$('#fp-nav').hide();
             $("#text-sec6-1").fadeIn("100000");
             $("#text-sec6-2").fadeIn("100000");
+
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+        }
+
+        if (index == 7) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+        }
+
+        if (index == 8) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
         }
 
         if(index == 9) {
@@ -206,6 +240,11 @@ $(document).ready(function () {
           thousandSeparator: ",", // Разделитель тыcячных
           duration: 1500          // Продолжительность анимации в миллисекундах
         });*/
+
+        $("#triangle").attr("fill","#fff");
+        $("#search-close").attr("fill","#fff");
+
+
         var currentNumbet = $('.chiffret').text();
         $({numberValue: currentNumbet}).animate({numberValue: 560891}, {
             duration: 2500,
@@ -244,8 +283,30 @@ $(document).ready(function () {
 
         }
 
+        if (index == 10) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+        }
+
+        if (index == 11) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+        }
+
+        if (index == 12) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+        }
+
+        if (index == 13) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
+        }
+
         if(index == 14) {
 
+          $("#triangle").attr("fill","#fff");
+          $("#search-close").attr("fill","#fff");
           /*$(function() {
             $("#topbar").show();
             $("#topbar").animate({width: "200px"},2500, function() {
@@ -272,6 +333,11 @@ $(document).ready(function () {
               $(this).find('strong').html(Math.round(50 * progress) + '<i>%</i>');
           });
 
+        }
+
+        if (index == 15) {
+            $("#triangle").attr("fill","#fff");
+            $("#search-close").attr("fill","#fff");
         }
 
     },
