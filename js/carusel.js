@@ -21,10 +21,12 @@ var numberOfImages1 = imagesArray1.length;
 
 prevArrow1.onclick = function () {
     handleSlideshowArrow('uprev');
+    slideco( -1 );
 };
 
 nextArrow1.onclick = function () {
     handleSlideshowArrow('unext');
+    slideco( 1 );
 };
 
 function handleSlideshowArrow(val1) {
@@ -50,6 +52,21 @@ function handleSlideshowArrow(val1) {
 }
 
 
+var indexManege = 0;
+//total = 5;
+
+function slideco(offset) {
+  indexManege = Math.min( Math.max( currentImage1 + offset, 0 ), numberOfImages1 - 1 );
+
+  document.querySelector( '.count1-gal' ).innerHTML = ( currentImage1 + 1 ) + ' / ' + numberOfImages1;
+
+  prevArrow1.setAttribute( 'data-state', currentImage1 === 0 ? 'disabled' : '' );
+  nextArrow1.setAttribute( 'data-state', currentImage1 === numberOfImages1 - 1 ? 'disabled' : '' );
+}
+
+slideco(0);
+
+
 
 $(document).ready(function () {
 
@@ -57,11 +74,15 @@ $(document).ready(function () {
 
   $('#gal1').on('click', function () {
     $('#manege').toggleClass('speed-in');
+
+    $("#header-top").removeAttr("style").hide();
   });
 
   $('#close-p').on('click', function () {
       $('#manege').removeClass('speed-in');
       //console.log("dvdfnkgfbk");
+
+      $("#header-top").fadeIn(200);
   });
 
 

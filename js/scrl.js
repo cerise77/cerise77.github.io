@@ -81,7 +81,6 @@ function handleSlideshowArrow(val) {
 
 
 
-
 var myCarousel = document.getElementById('carusel');
 
 if (myCarousel && myCarousel.hasChildNodes()) {
@@ -90,8 +89,6 @@ if (myCarousel && myCarousel.hasChildNodes()) {
     var nextArrow = document.getElementById('next');
     var childNodes = myCarousel.childNodes;
     var imagesArray = [];
-
-    var index = 0, total = 5;
 
     for (var i = 0; i < childNodes.length; i++) {
         var currentNode = childNodes[i];
@@ -107,10 +104,12 @@ var numberOfImages = imagesArray.length;
 
 prevArrow.onclick = function () {
     handleSlideshowArrow('prev');
+    slide( -1 );
 };
 
 nextArrow.onclick = function () {
     handleSlideshowArrow('next');
+    slide( 1 );
 };
 
 function handleSlideshowArrow(val) {
@@ -136,23 +135,22 @@ function handleSlideshowArrow(val) {
 }
 
 
-//var pr = document.querySelector( '.paginate.left' );
-//var pl = document.querySelector( '.paginate.right' );
+//pr.onclick = slide.bind( this, -1 );
+//pl.onclick = slide.bind( this, 1 );
 
-//prevArrow.onclick = slide.bind( this, -1 );
-//nextArrow.onclick = slide.bind( this, 1 );
+var indexCount = 0;
+//total = 5;
 
 function slide(offset) {
-  index = Math.min( Math.max( index + offset, 0 ), total - 1 );
+  indexCount = Math.min( Math.max( currentImage + offset, 0 ), numberOfImages - 1 );
 
-  document.querySelector( '.counter' ).innerHTML = ( index + 1 ) + ' / ' + total;
+  document.querySelector( '.count-gal' ).innerHTML = ( currentImage + 1 ) + ' / ' + numberOfImages;
 
-  prevArrow.setAttribute( 'data-state', index === 0 ? 'disabled' : '' );
-  nextArrow.setAttribute( 'data-state', index === total - 1 ? 'disabled' : '' );
+  prevArrow.setAttribute( 'data-state', currentImage === 0 ? 'disabled' : '' );
+  nextArrow.setAttribute( 'data-state', currentImage === numberOfImages - 1 ? 'disabled' : '' );
 }
 
 slide(0);
-
 
 
 
@@ -177,9 +175,13 @@ $('#close-v').on('click', function () {
 
 document.getElementById('vid').onclick = function() {
   document.getElementById("video").classList.toggle('speed-in');
+
+  document.getElementById('header-top').style.display = 'none';
 }
 
 function toggleVideo(state) {
+  document.getElementById('header-top').style.display = 'block';
+
   document.getElementById("video").classList.remove('speed-in');
   // if state == 'hide', hide. Else: show video
   var div = document.getElementById("video");
@@ -348,6 +350,9 @@ $(document).ready(function () {
     $("#button-close1").show("1000");
     $("#button").hide("100");
 
+    $("#header-top").removeAttr("style").hide();
+    //$("#header-top").hide("1");
+
     //console.log("dvdfnkgfbk");
   });
 
@@ -356,6 +361,10 @@ $(document).ready(function () {
     $('#sec4').removeClass('is-visible');
     $("#button").show("100");
     $("#button-close1").hide("1000");
+
+    $("#header-top").fadeIn(200);
+    //$("#header-top").attr("style").show();
+    //$("#header-top").show("1");
   });
 
 
@@ -368,6 +377,7 @@ $(document).ready(function () {
     $("#button-close2").show("1000");
     $("#but-vid").hide("100");
 
+    $("#header-top").removeAttr("style").hide();
     //console.log("dvdfnkgfbk");
   });
 
@@ -378,6 +388,8 @@ $(document).ready(function () {
     $("#button-close2").hide("1000");
 
     $('#video-left')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
+    $("#header-top").fadeIn(200);
 
   });
 
@@ -431,11 +443,15 @@ $(document).ready(function () {
 
   $('#gal').on('click', function () {
     $('#carusel').toggleClass('speed-in');
+
+    $("#header-top").removeAttr("style").hide();
   });
 
   $('#close-g').on('click', function () {
       $('#carusel').removeClass('speed-in');
       //console.log("dvdfnkgfbk");
+
+      $("#header-top").fadeIn(200);
   });
 
 
