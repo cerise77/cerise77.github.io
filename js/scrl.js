@@ -27,131 +27,6 @@ function toggle_panel_visibility(panel, background_layer, body) {
     }
 }*/
 
-/*var myCarousel = document.getElementById('carusel');
-
-if (myCarousel && myCarousel.hasChildNodes()) {
-    var imagesWrapper = document.getElementById('wrapper');
-    var prevArrow = document.getElementById('prev');
-    var nextArrow = document.getElementById('next');
-    var childNodes = myCarousel.childNodes;
-    var imagesArray = [];
-
-    for (var i = 0; i < childNodes.length; i++) {
-        var currentNode = childNodes[i];
-        if (currentNode.nodeName === 'IMG') {
-            imagesArray.push(currentNode.src);
-            currentNode.classList.add('hide');
-        }
-    }
-
-imagesWrapper.style.backgroundImage = 'url(' + imagesArray[0] + ')';
-var currentImage = 0;
-var numberOfImages = imagesArray.length;
-
-prevArrow.onclick = function () {
-    handleSlideshowArrow('prev');
-};
-
-nextArrow.onclick = function () {
-    handleSlideshowArrow('next');
-};
-
-function handleSlideshowArrow(val) {
-    if (val === 'prev') {
-        if (currentImage > 0) {
-            currentImage--;
-        } else {
-            currentImage = numberOfImages - 1;
-        }
-    } else if (val === 'next') {
-        if (currentImage < numberOfImages - 1) {
-            currentImage++;
-        } else {
-            currentImage = 0;
-        }
-    }
-
-    imagesWrapper.classList.add('fade-out');
-    imagesWrapper.style.backgroundImage = 'url(' + imagesArray[currentImage] + ')';
-    imagesWrapper.classList.remove('fade-out');
-}
-
-}*/
-
-
-
-
-var myCarousel = document.getElementById('carusel');
-
-if (myCarousel && myCarousel.hasChildNodes()) {
-    var imagesWrapper = document.getElementById('wrapper');
-    var prevArrow = document.getElementById('prev');
-    var nextArrow = document.getElementById('next');
-    var childNodes = myCarousel.childNodes;
-    var imagesArray = [];
-
-    for (var i = 0; i < childNodes.length; i++) {
-        var currentNode = childNodes[i];
-        if (currentNode.nodeName === 'IMG') {
-            imagesArray.push(currentNode.src);
-            currentNode.classList.add('hide');
-        }
-    }
-
-imagesWrapper.style.backgroundImage = 'url(' + imagesArray[0] + ')';
-var currentImage = 0;
-var numberOfImages = imagesArray.length;
-
-prevArrow.onclick = function () {
-    handleSlideshowArrow('prev');
-    slide( -1 );
-};
-
-nextArrow.onclick = function () {
-    handleSlideshowArrow('next');
-    slide( 1 );
-};
-
-function handleSlideshowArrow(val) {
-    if (val === 'prev') {
-        if (currentImage > 0) {
-            currentImage--;
-        } else {
-            currentImage = numberOfImages - 1;
-        }
-    } else if (val === 'next') {
-        if (currentImage < numberOfImages - 1) {
-            currentImage++;
-        } else {
-            currentImage = 0;
-        }
-    }
-
-    imagesWrapper.classList.add('fade-out');
-    imagesWrapper.style.backgroundImage = 'url(' + imagesArray[currentImage] + ')';
-    imagesWrapper.classList.remove('fade-out');
-}
-
-}
-
-
-//pr.onclick = slide.bind( this, -1 );
-//pl.onclick = slide.bind( this, 1 );
-
-var indexCount = 0;
-//total = 5;
-
-function slide(offset) {
-  indexCount = Math.min( Math.max( currentImage + offset, 0 ), numberOfImages - 1 );
-
-  document.querySelector( '.count-gal' ).innerHTML = ( currentImage + 1 ) + ' / ' + numberOfImages;
-
-  prevArrow.setAttribute( 'data-state', currentImage === 0 ? 'disabled' : '' );
-  nextArrow.setAttribute( 'data-state', currentImage === numberOfImages - 1 ? 'disabled' : '' );
-}
-
-slide(0);
-
 
 
 var currentNumber = $('.number').text();
@@ -265,11 +140,37 @@ $('#button-close1').on('click', function () {
 
 $(document).ready(function () {
 
+
+
   /*$('.scroll-down').click(function(){
-      $("html, body").animate({ scrollTop: $(window).height()}, 600);
-      return false;
+    //$('html, body').animate({scrollTop:$('#Section2').height()}, 'slow');
+    $('html, body').animate({scrollTop:$(window).height()}, 'slow');
+    return false;
+    //$('body,html').animate({scrollTop: top}, 1500);
+      //$("html, body").animate({ scrollTop: $(window).height()}, 600);
+      //return false;
+      console.log("ddvl");
   });*/
 
+  /*$(".scroll-down").click(function(event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });*/
+
+  /*$('.scroll-down').click(function(){
+    $('body,html').animate({scrollTop: top}, 1500);
+      //$('html, body').animate({scrollTop:$('#Section2').height()}, 'slow');
+      return false;
+  });*/
 
   /*$('.scroll-down').click (function() {
 

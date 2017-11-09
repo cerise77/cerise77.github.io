@@ -86,6 +86,7 @@ $(document).ready(function () {
             $("#logo37").attr("fill","#fff");
             $("#logo38").attr("fill","#fff");
             $("#logo39").attr("fill","#fff");*/
+
         }
 
         if (index == 2) {
@@ -202,6 +203,7 @@ $(document).ready(function () {
           $("#triangle").attr("fill","#fff");
           $("#search-close").attr("fill","#fff");
 
+          $('#Layer_1').addClass('animated pulse');
         }
 
         if (index == 5) {
@@ -226,11 +228,15 @@ $(document).ready(function () {
         if (index == 7) {
             $("#triangle").attr("fill","#fff");
             $("#search-close").attr("fill","#fff");
+
+            $('#Layer_2').addClass('animated pulse');
         }
 
         if (index == 8) {
             $("#triangle").attr("fill","#fff");
             $("#search-close").attr("fill","#fff");
+
+            $('#Layer_3').addClass('animated pulse');
         }
 
         if(index == 9) {
@@ -286,11 +292,15 @@ $(document).ready(function () {
         if (index == 10) {
             $("#triangle").attr("fill","#fff");
             $("#search-close").attr("fill","#fff");
+
+            $('#Layer_4').addClass('animated pulse');
         }
 
         if (index == 11) {
             $("#triangle").attr("fill","#fff");
             $("#search-close").attr("fill","#fff");
+
+            $('#Layer_5').addClass('animated pulse');
         }
 
         if (index == 12) {
