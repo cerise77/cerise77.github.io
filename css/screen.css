@@ -288,6 +288,116 @@ header {
 
 
 
+/*---------Search1-------*/
+.search1 {
+  /*padding-top: 20px;*/
+  /*float: right;
+  vertical-align: middle;*/
+}
+.search-btn1 {
+  cursor: pointer;
+}
+.search-btn1:hover {
+  opacity: .5;
+}
+.search-slide1 {
+  width: 0;
+  height: 2.5em;
+  overflow: hidden;
+}
+.search-close1 {
+  margin-top: -30px;
+  width: 1.375em;
+  height: 1.375em;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+.search-close1:hover {
+  opacity: .5;
+}
+
+/* inline block */
+.ib1 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ib-m1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search1 a {
+  margin-right: 7px;
+}
+.search1 img {
+  width: 26px;
+  height: 26px;
+}
+.search1 a:last-child {
+  margin-right: 0;
+}
+
+
+
+/*---------Search1-------*/
+.search2 {
+  /*padding-top: 20px;*/
+  /*float: right;
+  vertical-align: middle;*/
+}
+.search-btn2 {
+  cursor: pointer;
+}
+.search-btn2:hover {
+  opacity: .5;
+}
+.search-slide2 {
+  width: 0;
+  height: 2.5em;
+  overflow: hidden;
+}
+.search-close2 {
+  margin-top: -30px;
+  width: 1.375em;
+  height: 1.375em;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+.search-close2:hover {
+  opacity: .5;
+}
+
+/* inline block */
+.ib2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ib-m2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search2 a {
+  margin-right: 7px;
+}
+.search2 img {
+  width: 26px;
+  height: 26px;
+}
+.search2 a:last-child {
+  margin-right: 0;
+}
+
+
+
 /*--------Menu----------*/
 
 .header-top {
@@ -2748,23 +2858,6 @@ margin-bottom: 0;
     text-align: center;
   }
 
-  @media screen and (max-width: 1380px) {
-    #sec15 .row h5 {
-      padding-top: 435px;
-      margin-bottom: 15px;
-      font-size: 58px;
-      color: #fff;
-      text-align: center;
-    }
-    #sec15 .row p {
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 17px;
-      color: #fff;
-      text-align: center;
-    }
-  }
-
   #sec15 .sec2-ul {
     display: block;
   }
@@ -2793,6 +2886,20 @@ margin-bottom: 0;
   	background-size: cover;
   	text-align: center;
   }
+  #sec15 .row .list2 {
+    	padding: 10px;
+    	height: 100vh;
+    	background: url(img/list2.jpg) no-repeat center center;
+    	background-size: cover;
+    	text-align: center;
+    }
+    #sec15 .row .list3 {
+    	padding: 10px;
+    	height: 100vh;
+    	background: url(img/list3.jpg) no-repeat center center;
+    	background-size: cover;
+    	text-align: center;
+    }
   #sec15 .row .list1 a {
   	/*display: block;
   	margin: 0 auto;
@@ -2826,24 +2933,70 @@ margin-bottom: 0;
     width: 120px;
     height: 120px;
   }
+  #sec15 .row .bottom_soc {
+    margin-left: -20px;
+    width: 120px;
+    height: 120px;
+  }
+  #sec15 .row .bottom_soc1 {
+    margin-left: -20px;
+    width: 120px;
+    height: 120px;
+  }
+  #sec15 .row .bottom_soc2 {
+    margin-left: -20px;
+    width: 120px;
+    height: 120px;
+  }
+
   @media screen and (max-width: 1380px) {
     #sec15 .row .button-boot {
       width: 90px;
       height: 90px;
     }
+    #sec15 .row .bottom_soc {
+      width: 90px;
+      height: 90px;
+    }
+    #sec15 .row .bottom_soc1 {
+      margin-left: -7px;
+      width: 90px;
+      height: 90px;
+    }
+    #sec15 .row .bottom_soc2 {
+      margin-left: -7px;
+      width: 90px;
+      height: 90px;
+    }
+
+    #sec15 .row {
+      padding: 0 100px;
+      z-index: 20px;
+    }
+    #sec15 .row h5 {
+      padding-top: 435px;
+      margin-bottom: 15px;
+      font-size: 58px;
+      color: #fff;
+      text-align: center;
+    }
+    #sec15 .row p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 17px;
+      color: #fff;
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: 1365px) {
-    /*#sec15 .row .button-boot {
-      width: 60px;
-      height: 60px;
-    }*/
-    #sec15 .planshet ul > li .planshet-boot {
+    #sec15 .row {
+      padding: 0 100px;
+      z-index: 20px;
+    }
+    /*#sec15 .planshet ul > li .planshet-boot {
       width: 70px;
       height: 70px;
-    }
-    #sec15 .row  {
-      display: none;
     }
     #sec15 .planshet ul {
       list-style: none;
@@ -2856,21 +3009,18 @@ margin-bottom: 0;
       cursor: pointer;
     }
     #sec15 .planshet ul > li:first-child {
-      /*padding: 10px;*/
     	height: 100vh;
     	background: url(img/list1.jpg) no-repeat center center;
     	background-size: cover;
     	text-align: center;
     }
     #sec15 .planshet ul > li:nth-child(2) {
-      /*padding: 10px;*/
     	height: 100vh;
     	background: url(img/list2.jpg) no-repeat center center;
     	background-size: cover;
     	text-align: center;
     }
     #sec15 .planshet ul > li:last-child {
-      /*padding: 10px;*/
     	height: 100vh;
     	background: url(img/list3.jpg) no-repeat center center;
     	background-size: cover;
@@ -2891,83 +3041,270 @@ margin-bottom: 0;
       color: #fff;
       text-align: center;
       font-weight: 200;
-    }
-  }
-  @media screen and (max-width: 1055px) {
-    /*#sec15 .row .button-boot {
-      width: 60px;
-      height: 60px;
     }*/
-    #sec15 .planshet ul > li .planshet-boot {
-      width: 70px;
-      height: 70px;
+
+    #sec15 .row .button-boot {
+      width: 80px;
+      height: 80px;
     }
-    #sec15 .row  {
-      display: none;
+    #sec15 .row .bottom_soc {
+      width: 80px;
+      height: 80px;
     }
-    #sec15 .planshet ul {
-      list-style: none;
+    #sec15 .row .bottom_soc1 {
+      margin-left: -7px;
+      width: 80px;
+      height: 80px;
     }
-    #sec15 .planshet ul > li {
-      display: block;
-      /*width: 320px;*/
-    }
-    #sec15 .planshet ul > li a {
-      cursor: pointer;
-    }
-    #sec15 .planshet ul > li:first-child {
-      /*padding: 10px;*/
-    	/*height: 100vh;*/
-    	background: url(img/list1.jpg) no-repeat center center;
-    	background-size: cover;
-    	text-align: center;
-    }
-    #sec15 .planshet ul > li:nth-child(2) {
-      /*padding: 10px;*/
-    	/*height: 100vh;*/
-    	background: url(img/list2.jpg) no-repeat center center;
-    	background-size: cover;
-    	text-align: center;
-    }
-    #sec15 .planshet ul > li:last-child {
-      /*padding: 10px;*/
-    	/*height: 100vh;*/
-    	background: url(img/list3.jpg) no-repeat center center;
-    	background-size: cover;
-    	text-align: center;
-    }
-    #sec15 ul > li h5 {
-      padding-top: 5px;
-      margin-bottom: 15px;
-      font-size: 34px;
-      color: #fff;
-      text-align: center;
-      font-family: "Roboto Light", sans-serif;
-    }
-    #sec15 ul > li p {
-      margin-bottom: 20px;
-      font-size: 12px;
-      line-height: 17px;
-      color: #fff;
-      text-align: center;
-      font-weight: 200;
+    #sec15 .row .bottom_soc2 {
+      margin-left: -7px;
+      width: 80px;
+      height: 80px;
     }
   }
 
-  #sec15 .row .list2 {
-  	padding: 10px;
-  	height: 100vh;
-  	background: url(img/list2.jpg) no-repeat center center;
-  	background-size: cover;
-  	text-align: center;
+  @media screen and (max-width: 1200px) {
+    #sec15 .row {
+      padding: 0 50px;
+      z-index: 20px;
+    }
+    #sec15 .row h5 {
+      padding-top: 400px;
+      margin-bottom: 15px;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+    }
+    #sec15 .row p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+      text-align: center;
+    }
+
+    #sec15 .row .button-boot {
+      width: 80px;
+      height: 80px;
+    }
+    #sec15 .row .bottom_soc {
+      margin-left: -37px;
+      width: 80px;
+      height: 80px;
+    }
+    #sec15 .row .bottom_soc1 {
+      margin-left: -7px;
+      width: 80px;
+      height: 80px;
+    }
+    #sec15 .row .bottom_soc2 {
+      margin-left: -7px;
+      width: 80px;
+      height: 80px;
+    }
   }
-  #sec15 .row .list3 {
-  	padding: 10px;
-  	height: 100vh;
-  	background: url(img/list3.jpg) no-repeat center center;
-  	background-size: cover;
-  	text-align: center;
+
+  @media screen and (max-width: 1055px) {
+    #sec15 .row {
+      padding: 0;
+      z-index: 20px;
+    }
+    #sec15 .row h5 {
+      padding-top: 400px;
+      margin-bottom: 15px;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+    }
+    #sec15 .row p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+      text-align: center;
+    }
+
+    #sec15 .row .button-boot {
+      width: 80px;
+      height: 80px;
+    }
+    #sec15 .row .bottom_soc {
+      margin-left: -37px;
+      width: 80px;
+      height: 80px;
+    }
+    #sec15 .row .bottom_soc1 {
+      margin-left: -7px;
+      width: 80px;
+      height: 80px;
+    }
+    #sec15 .row .bottom_soc2 {
+      margin-left: -7px;
+      width: 80px;
+      height: 80px;
+    }
   }
+
+
+  @media screen and (max-width: 991px) {
+    #sec15 .row, #sec15 .scroll-icon {
+      display: none;
+    }
+    #sec15 .planchet {
+      background: #141719;
+      max-height: 1024px;
+      width: 100%;
+    }
+    #sec15 ul.grid {
+      list-style: none;
+    }
+    #sec15 ul.grid > li {
+      padding: 17% 40px 4%;
+    }
+    #sec15 ul.grid > li a {
+      cursor: pointer;
+    }
+    #sec15 ul.grid > li ul.list-flex {
+      list-style: none;
+      text-align: left;
+    }
+    #sec15 ul.grid > li ul.list-flex > li {
+      display: inline-block;
+    }
+    #sec15 ul.grid > li ul.list-flex > li:last-child {
+      float: right;
+    }
+
+    #sec15 h5 {
+      margin-bottom: 7px;
+      font-size: 3.2em;
+      line-height: 1.1em;
+      color: #fff;
+      font-family: "Roboto Light", sans-serif;
+      text-align: left;
+    }
+    #sec15 p {
+      font-size: 1em;
+      line-height: 1.2em;
+      font-weight: 300;
+      color: #fff;
+      text-align: left;
+    }
+    #sec15 .grid1 {
+      background: url(img/ban22.jpg) no-repeat center;
+      vertical-align: bottom;
+    }
+    #sec15 .grid2 {
+      background: url(img/ban23.jpg) no-repeat center center;
+    }
+    #sec15 .grid3 {
+      background: url(img/ban24.jpg) no-repeat center center;
+    }
+
+    #sec15 .button-boot {
+      width: 70px;
+      height: 70px;
+    }
+    #sec15 .bottom_soc {
+      margin-left: -37px;
+      width: 70px;
+      height: 70px;
+    }
+    #sec15 .bottom_soc1 {
+      margin-left: -7px;
+      width: 70px;
+      height: 70px;
+    }
+    #sec15 .bottom_soc2 {
+      margin-left: -7px;
+      width: 70px;
+      height: 70px;
+    }
+    /*.flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #141719;
+      max-height: 1024px;
+    }
+    .flex-block{
+      padding: 18% 50px 2%;
+    }
+    .flex-block a {
+      cursor: pointer;
+    }
+    #sec15 h5 {
+      margin-bottom: 7px;
+      font-size: 3.2em;
+      line-height: 1.1em;
+      color: #fff;
+      font-family: "Roboto Light", sans-serif;
+      text-align: left;
+    }
+    #sec15 p {
+      font-size: 1em;
+      line-height: 1.2em;
+      font-weight: 300;
+      color: #fff;
+      text-align: left;
+    }
+    #flex1{
+      width: 100%;
+      background: url(img/ban22.jpg) no-repeat center;
+      vertical-align: bottom;
+    }
+    #flex2{
+      margin: 0;
+      width: 100%;
+      background: url(img/ban23.jpg) no-repeat center center;
+    }
+    #flex3{
+      margin: 0;
+      width: 100%;
+      background: url(img/ban24.jpg) no-repeat center center;
+    }
+
+    #sec15 ul.list-flex {
+      list-style: none;
+      text-align: left;
+      vertical-align: bottom;
+    }
+    #sec15 ul.list-flex > li {
+      display: inline-block;
+    }
+    #sec15 ul.list-flex > li:first-child {
+      margin-right: 30%;
+    }
+
+
+    #sec15 ul.list-flex {
+      list-style: none;
+      text-align: left;
+    }
+    #sec15 ul.list-flex > li {
+      display: inline-block;
+    }
+    #sec15 ul.list-flex > li {
+
+    }
+    #sec15 .bottom_soc {
+      margin-left: -20px;
+      width: 120px;
+      height: 120px;
+    }
+    #sec15 .bottom_soc1 {
+      margin-left: -20px;
+      width: 120px;
+      height: 120px;
+    }
+    #sec15 .bottom_soc2 {
+      margin-left: -20px;
+      width: 120px;
+      height: 120px;
+    }*/
+
+  }
+
 
 
 
